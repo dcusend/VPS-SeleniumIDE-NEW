@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://demo.velocitypayment.com/admin/" />
+<title>Add- Edit- Delete Credit Card</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add- Edit- Delete Credit Card</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>imtiazdemo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogin</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>mkhan</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access No Special Chars Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>selenium</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createCreditCardButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nickName</td>
+	<td>credir card</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cardNumber</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=expirationMonth</td>
+	<td>label=4 - APR</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=expirationYear</td>
+	<td>label=2026</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submitCreateCreditCardButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=expirationYear</td>
+	<td>label=2020</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=expirationMonth</td>
+	<td>label=12- DEC</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address2</td>
+	<td>jjjjjjjjjj</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=postalCode</td>
+	<td>15220</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submitCCModifyButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>PaymentMethod Modification Payment method successfully modified Credit Card Billing Information Application: No Special Chars Test<br /> <br /> selenium selenium <br /> selenium <br /> jjjjjjjjjj <br /> PITTSBURGH, PA 15220 <br /> United States <br /> <br /> Card Information <br /> Card Nickname:credir card <br /> Card type:Visa <br /> Card number:xxx1111 <br /> Expiration:12/2020 <br /> <br /> Modify Credit Card&nbsp;&nbsp;&nbsp;Delete Credit Card&nbsp;&nbsp;&nbsp;Return to Profile <br /><br /> <br /> <br /> Payment Plans <br /> Payment Plan ID Actions No Payment Plans Available</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Credit Card</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=deleteButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=here</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

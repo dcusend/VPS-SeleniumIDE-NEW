@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa2.velocitypayment.com/" />
+<title>TestUPMCwithURL</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestUPMCwithURL</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>file://Z:/CSR/QA/TestUPMCwithURL.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>myVar</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars.myVar&lt;=20</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${myVar}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${CallerIDURL}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogIn</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${CallerIDURL}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>hello2222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endCallHeader</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleCustomerName</td>
+	<td>${CustName}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleApplicationName</td>
+	<td>${AppName}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleClientAccountNumber</td>
+	<td>${CAN}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleFirstName</td>
+	<td>${Fname}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleLastName</td>
+	<td>${LName}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleAddress1</td>
+	<td>${Address1}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleCity</td>
+	<td>${City}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleState</td>
+	<td>${State}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleZip</td>
+	<td>${ZIP}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars.myVar++;}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

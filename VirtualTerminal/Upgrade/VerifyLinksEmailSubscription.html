@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://upgrade.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksEmailSubscription</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksEmailSubscription</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://upgrade.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@12345678</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access Email Subscription</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>V-Clerk - E-Mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=Operational_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=Audit_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=User_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=allr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=FirstView</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Email Subscription</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#ReportSubscriptionActionForm &gt; div &gt; div</td>
+	<td>regexp:Report:.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=reportId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ReportSubscriptionActionForm']/div[2]/div</td>
+	<td>regexp:Name:.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=subscriptionName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ReportSubscriptionActionForm']/div[4]/div</td>
+	<td>regexp:Schedule:.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=scheduleId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ReportSubscriptionActionForm']/div[5]/div</td>
+	<td>regexp:Email To:.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h4</td>
+	<td>User Email Address List</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ReportSubscriptionActionForm']/div[5]/div[2]/table/tbody/tr/td/table/tbody/tr[2]/td</td>
+	<td>regexp:Available:.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=option[value=&quot;1011@ail.com&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>document.ReportSubscriptionActionForm.right[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>document.ReportSubscriptionActionForm.right[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>document.ReportSubscriptionActionForm.left[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>document.ReportSubscriptionActionForm.left[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ReportSubscriptionActionForm']/div[5]/div[2]/table/tbody/tr/td/table/tbody/tr[2]/td[3]</td>
+	<td>regexp:Selected:.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='ReportSubscriptionActionForm']/div[6]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ReportSubscriptionActionForm']/div[6]/div</td>
+	<td>regexp:Delivery Format:.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=fileFormat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ReportSubscriptionActionForm']/div[7]/div</td>
+	<td>regexp:Subject Type:.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=subjectType_Standard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=subjectType_Custom</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='contentwrapper']/div[4]/table/tbody/tr/th/h4</td>
+	<td>Report Subscription</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[type=&quot;reset&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

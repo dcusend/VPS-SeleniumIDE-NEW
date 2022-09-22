@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dev-algorithm.govolution.com/vrelaytest/QA/version_1_0/" />
+<title>SecondTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SecondTest</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>Begin Test: Test New Emulator for es_US</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://qa.velocitypayment.com/agency/config.do?action=editor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=message_version</td>
+	<td>label=2.3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=amount</td>
+	<td>23.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=client_account_number</td>
+	<td>66789can</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=action_type</td>
+	<td>AutoPay</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=language</td>
+	<td>es_US</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_firstname</td>
+	<td>Johnny</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_lastname</td>
+	<td>Papas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_address</td>
+	<td>2000 14th Street N</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_address2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_country_id</td>
+	<td>840</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_city</td>
+	<td>Gambrills</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_state</td>
+	<td>MD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_zip</td>
+	<td>21054</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=order_number</td>
+	<td>GTHRYU</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined1</td>
+	<td>udf1 hello</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined2</td>
+	<td>udf2 hello</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined3</td>
+	<td>udf3 hello</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined4</td>
+	<td>udf4 hello</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined5</td>
+	<td>udf5 hello</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=application_id</td>
+	<td>561</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=message_version</td>
+	<td>2.3</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>remID</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=remittance_id</td>
+	<td>${remID}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p</td>
+	<td>Debug Information (1st handshake with agency):<br /> billing_zip=21054<br /> billing_address=2000 14th Street N<br /> billing_state=MD<br /> user_defined5=udf5 hello<br /> user_defined4=udf4 hello<br /> user_defined3=udf3 hello<br /> user_defined2=udf2 hello<br /> amount=23.00<br /> user_defined1=udf1 hello<br /> continue_processing=true<br /> order_number=GTHRYU<br /> billing_firstname=Johnny<br /> billing_city=Gambrills<br /> billing_lastname=Papas</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>End Test: Test New Emulator for es_US</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,503 @@
+application_id,message_version,request_post_url,name,customer_id
+12,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Govolution Testing,6
+14,2.2,https://www.kcttc.co.kern.ca.us/payment/verifypayment.aspx,Kern County Tax Collection,10
+27,2.1,https://egov.dnrec.delaware.gov/egovpublic/dnrec/disp?doc=shoppingcart&op=sv,Delaware Fish and Wildlife,19
+31,1.0,https://166.94.1.14/dta/epay/sessionVerification.asp,Fairfax County  Property Taxes,13
+37,2.1,https://egovagent.dnrec.delaware.gov/egovagent/dnrec/disp?doc=shoppingcart&op=sv,Delaware Fish and Wildlife Agent,19
+136,2.2,https://tierii.dnrec.delaware.gov/TierII/Billing/OnlinePayment/VerifyOnlinePaymentSession.aspx,Delaware Chem Inventory 142,19
+138,2.2,https://egov.dnrec.delaware.gov/egovpublic/dnrec/disp?doc=shoppingcart&op=sv,Delaware Outdoor Magazine,19
+179,2.2,https://www.fairfaxcounty.gov/AFAR/VRELAY/VRVerificationResponse.aspx,FFX CRS Athletic Services (AFAR),38
+195,2.2,https://OneStop.delaware.gov/osbrlpublic/controller?JSPName=TRANSACTIONSV,State of Delaware - One Stop,44
+209,2.2,https://www.fairfaxcounty.gov/ofc/saccpayments/sessionver.aspx,FFX School Age Child Care,53
+228,1.5,NULL,Harris County WCID-Disabled,67
+244,1.5,NULL,City of Edna Courts,76
+247,1.5,NULL,City of Edna Water and Sewer,77
+286,2.3,https://payments.washco-md.net/MSS/PaymentSessionVerification.ashx,WASHCO - Water Quality Payments ,93
+289,2.2,https://efile.ccatax.ci.cleveland.oh.us/vrelay_verification_request,Central Collection Agency,96
+291,2.2,https://efile.ccatax.ci.cleveland.oh.us/vrelay_verification_request,Central Collection Agency ACH Only,96
+311,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,K-Pay,110
+312,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,College Pro Painters US OPS,111
+315,2.3,https://payments.washco-md.net/MSS/PaymentSessionVerification.ashx,WASHCO - Property Tax Payments,93
+462,1.5,NULL,Hernando County Utilities,132
+477,2.2,https://secure.fsec.ucf.edu/vrelay/sessionVerify.php,UCF FL Solar Energry Ctr E-Com,142
+484,2.2,https://knightcash.ucf.edu/Govolution/Verify.aspx,UCF Card Services E-Com,144
+487,2.3,https://iog.ucf.edu/wconnect/payment.awp ,UCF FL Institute of Govt,151
+496,2.2,https://apply.ucf.edu/application/Gateways/undergrad_app_home_vrelay.aspx,UCF Undergraduate Admissions E-Com,141
+497,2.2,https://secure.vzorientation.com/ucf/reservation/vprelay/svm.aspx,UCF First Year Experience E-Com,145
+502,2.2,https://boast.net.ucf.edu/cgi-bin/vx-verify-prod.pl,UCF Student Accounts Payment Web,139
+511,2.3,https://tax.des.nc.gov/TPay/BOAVerification.aspx,NC ESC RPO Merchant Acct,166
+514,2.2,https://secure.cambridgema.gov/govolution/vrelay.cfm,Cambridge Traffic Parking Dept ,169
+523,2.3,https://apps.childrenshospital.org/mychildrens/billing/billingRelay.cfm,Childrens Hosp Patient Accounts,131
+527,2.2,https://actweb.acttax.com/act_webdev/common/JavaSecure/VRelay/session_verification.jsp,City of Deer Park Property Taxes,179
+564,2.2,https://pay.azwater.gov/earpayment/SessionVerification.aspx,Arizona Water Resources,202
+565,2.3,https://www.ce.ucf.edu/wconnect/payment.awp,UCF Continuing Education - Aceweb,140
+666,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,School Board of Miami Dade,207
+743,1.5,NULL,Fauquier County Water & Sanitation Authority,224
+754,2.2,https://prodenv.dep.state.fl.us/DepPay/process,FDEP Centralized Payment System,231
+866,2.2,https://my.sfwmd.gov/eSubmittal/PaymentSessionVerify.jsp,ERP - ePermitting,246
+867,2.2,https://my.sfwmd.gov/eSubmittal/PaymentSessionVerify.jsp,Water Use - ePermitting,246
+887,2.5,https://apply.med.ucf.edu/FeePayment/Verification,UCF COM Application Fees,251
+888,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Catawba County Tax Collector,252
+892,2.2,https://patientpayments.lifewatch.com/PaymentVerification.asp,Lifewatch Pay Online,255
+907,2.2,https://sun1.wellborn.com/boa/boa.php,Wellborn Payments,262
+926,1.5,NULL,Charles County Parking Tickets WEB,181
+927,1.5,NULL,Charles County Taxes WEB,181
+928,1.5,NULL,Charles County Utilities WEB,181
+971,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Fairfax Dog License,13
+975,2.2,https://www.fl-ag-online.com/egc/customer/eftcaptureBOA.aspx,FDACS eCommerce,295
+986,2.5,https://paybill.benefitmall.com/paybillverifyreq.aspx,BenefitMall Online Payment System,300
+989,2.2,https://Pay.sandiego.gov/BTaxRTaxPay/BoaVerification.aspx ,City of San Diego Rental Tax,281
+1012,2.5,https://alarms.charlescountymd.gov/pResponse/govltnVerify.ashx,Charles County FARU,181
+1024,1.5,NULL,WD-40 Company Online Payment System,319
+1092,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,CDS Collection Agency ShortPay,174
+1115,1.5,NULL,Via Christi Health Online Bill Pa-Disabled09252019,292
+1171,2.2,https://www.sbdc.uh.edu/assnfe/CartVerification.asp,UH Small Business Development Center,339
+1181,2.2,https://cellphone.doh.state.fl.us/pages/process/BoA_SessionVerification.aspx,DOH Cell Phone Reimbursement,289
+1181,2.3,https://cellphone.doh.state.fl.us/pages/process/BoA_SessionVerification.aspx,DOH Cell Phone Reimbursement,289
+1181,2.5,https://cellphone.doh.state.fl.us/pages/process/BoA_SessionVerification.aspx,DOH Cell Phone Reimbursement,289
+1183,2.2,https://secure1.ushealthworks.com/OnlinePaymentVerification.aspx,US Health Works Online Payment System,341
+1203,1.5,NULL,Cooperative Extension Web,252
+1206,2.2,https://accela64.howardcountymd.gov/citizenaccess/Payment/Govolution/PaymentHandle.aspx?p=1,Permit/License Types-Electrical Permits,354
+1260,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Paychex,358
+1264,2.2,https://testing.las.uh.edu/reg/sverify.aspx,UTS Test Registration,339
+1275,2.5,https://cltr.douglasnv.us/wp-external/pages/velocity_validate.php,Douglas County Property Tax,364
+1285,2.2,https://notaryforms.delaware.gov/Payment/Govolution/PaymentVerification.ashx,Notary Public Section,64
+1288,2.2,https://boast.net.ucf.edu/cgi-bin/vx-verify-prod.pl,UCF Undergraduate Enrollment,141
+1289,1.5,NULL,Patient Pay,368
+1293,2.2,https://www.opt.uh.edu/apply/od/payment/verify.cfm,Optometry Student Affairs,339
+1294,2.2,https://uh.t2hosted.com/custom/BOA_SessionVerification.aspx,T2 Flex E-Business,339
+1301,2.2,https://my.intl.ucf.edu/payment_processor.aspx,UCF Multilingual and Multicultural Studies Ecom,149
+1303,2.2,https://www.fl-ag-online.com/egc/customer/eftcaptureBOA.aspx,eCommerce Payment,295
+1307,2.2,https://actweb.acttax.com/act_webdev/common/JavaSecure/VRelay/session_verification.jsp,Webb Consolidated ISD Tax Payments,380
+1315,2.2,https://actweb.acttax.com/act_webdev/common/JavaSecure/VRelay/session_verification.jsp,Texas City ISD Tax Payments,385
+1337,2.2,https://maps.dnrec.delaware.gov/OnlineWellPermitting/Forms/SessionVerification.aspx,Well Permitting,19
+1402,2.2,https://payments.uhcl.edu/CCM/vrelay/verification,Art School for Children and Young Adults,396
+1403,2.2,https://payments.uhcl.edu/CCM/vrelay/verification,Foreign Language and English Enhancement,396
+1410,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,KC EHS Online Billing System ,400
+1465,2.2,https://payments.uhcl.edu/CCM/vrelay/verification,Center for Educational Programs,396
+1484,2.2,https://www.bauer.uh.edu/gpp_payment/sessionverify.aspx,EMBA Application,339
+1487,2.2,https://www.snoco.org/proptaxpay/bankverification.aspx,Snohomish County Property Tax Payments,427
+1488,2.3,https://actweb.acttax.com/act_webdev/common/JavaSecure/VRelay/session_verification.jsp,Freer ISD Tax Payments,428
+1501,2.2,https://global.dt.uh.edu/eservices/payment/pay_verified.asp ,e-services payment,431
+1501,2.3,https://global.dt.uh.edu/eservices/payment/pay_verified.asp ,e-services payment,431
+1512,2.2,https://ce.opt.uh.edu/act/verify.cfm,Continuing Education Optometry,339
+1541,2.3,https://www.brazosvalley.sbdcnetwork.net/assnfe/CartVerification.asp,SBDC Brazo Valley Center,339
+1542,2.3,https://www.fortbend.sbdcnetwork.net/assnfe/CartVerification.asp,SBDC Fort Bend,339
+1590,1.5,NULL,City of Parker Payments,442
+1600,2.3,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,UHCL Peoplesoft CC Manual Processing,396
+1601,2.3,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,UHV Peoplesoft CC Manual Processing,439
+1602,2.3,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,UH Peoplesoft CC Manual Processing,339
+1603,2.2,https://epay.infosysapps.com/ePayValidator/ePayValidate.ashx?VALMTHD=VPLUS.SVMSG,Epayment Portal for Remittance to Infosys,445
+1607,2.3,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,UH Peoplesoft Admissions Self Service,339
+1608,2.3,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,UHCL Peoplesoft Admissions Self Service,396
+1646,2.3,https://www.chshamilton.com/EFT/Verify.aspx,Hamilton Energy,463
+1650,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Alamo Rent-A-Car Claim Payment Services,466
+1652,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,National Car Rental Claim Payment Services,466
+1653,2.3,https://webapps.sandiego.gov/TOTPay/CertSessionVerification.aspx,CitySD TOT,281
+1677,2.3,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,Peoplesoft UHV ACH Processing,439
+1679,2.3,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,Peoplesoft UH ACH Processing,339
+1724,2.5,https://www.seacoastbrokers.com/ppg/boa.aspx ,DBH Global Bank of America Payment Processing,495
+1741,2.3,https://Pay.sandiego.gov/BTaxApp/BoaVerification.aspx ,Business Tax Online Application,281
+1762,2.3,https://howardcountymd.munisselfservice.com/PaymentSessionVerification.ashx,Tax Billing,489
+1799,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Greystone Payment Portal,517
+1806,2.3,https://nisqually.co.pierce.wa.us/cfapps/secure/pw/sewerbilling/paynow/paynow.cfm,Pierce County Sewer Utility,519
+1809,2.2,https://www.fairfaxcounty.gov/policefalsealarm/govolution/verify.ashx,FCPD FARU Web,43
+1812,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,University Health System CareLink,521
+1813,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,University Health System UMA Physician Billing,521
+1814,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,University Health System Hospital Billing,521
+1833,2.3,https://redeconnectv2.mahindradealerportal.com/SecureSAPTranactions/CreateSession12192012.aspx,Mahindra USA Product Payments,531
+1845,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,City of El Monte Water Dept. Online Payment System,535
+1848,2.3,https://Pay.sandiego.gov/BTaxRTaxPay/BoaVerification.aspx ,Business Tax Renewal,281
+1850,1.5,NULL,Taxes,536
+1852,2.3,https://global.dt.uh.edu/eservices/payment/pay_verified.asp,e-services ACH only payment,431
+1853,1.5,NULL,Commercial Water Bills,536
+1856,1.5,NULL,Miscellanous Bills,536
+1857,1.5,NULL,Parking Permits Renewal,536
+1858,1.5,NULL,Residential Water Bills,536
+1893,2.3,https://www.fairfaxcounty.gov/bldgpermits/pay_relay.aspx,FIDO,549
+1898,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Vet Payments,552
+1900,2.3,https://washcounty.info/wcmtp/tri-gvsvr.asp,Disabled 062518-Tax Payments,554
+1912,2.3,https://mynsmstore.uh.edu/verify/index.php,MyNSM Store,339
+1915,2.3,https://campserver.uhcl.edu/wconnect/payment.awp,Center for Advanced Management Programs,396
+1919,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,JZANUS LTD Online,361
+1921,2.3,https://apps.dnrec.state.de.us/eNOI/Forms/SessionVerification.aspx,DNREC DSWR - Notice of Intent,19
+1922,1.5,NULL,Residential Utility Payments,560
+1923,1.5,NULL,Miscellaneous Payments,560
+1925,1.5,NULL,Property Taxes,560
+1933,2.3,https://ekgcasi.embanet.com/payment/govolutionpayment/govolution_gettoken.aspx,Abilene Christian University Online Course Payment,562
+1937,1.5,NULL,Publishers Clearing House Online Payment System,563
+1938,2.5,https://secure2.orderhotlunch.com/Postback.aspx?Command=VelocitySessionVerification&Customer=DE_Newark_NewarkCharterSchool,Newark Charter Schools,564
+1942,1.5,NULL,Library Web,252
+1943,1.5,NULL,Social Services,252
+1953,2.3,https://ekgcasi.embanet.com/payment/govolutionpayment/govolution_gettoken.aspx,New England College Online Course Payment,562
+1955,2.3,https://APPS.AZDOT.GOV/MVD/AircraftRegRenewal/SessionVerification.aspx,MVD Aircraft Registration,570
+1964,1.5,NULL,WEB Tax Collections,567
+1966,2.3,https://app.floridaenergysummit.com/floridaenergysummit/verifyCustomer.aspx,Florida Energy Summit,574
+2010,1.5,NULL,WEB Circuit Court,575
+2015,2.3,https://www.nhtaxkiosk.com/sverification.aspx,Property Taxes,580
+2024,2.3,https://armsweb.co.pierce.wa.us/ExtProvider/BankOfAmericaVerify.aspx,Pierce County Auditor Public Access,438
+2026,2.3,https://www.registerblast.com/ucf/VRVerify,University Testing Center,582
+2029,2.3,https://bpaservice.atsol.com/g/VerifySession.aspx,HCPD Red Light AXSIS,334
+2030,2.3,https://securemde.mde.state.md.us/_layouts/OLRR/SessionVerification.aspx,OnLine Lead Rental Registration and Fee Payment,585
+2031,1.5,NULL,JSA Healthcare Online Bill-Pay,586
+2040,2.3,https://www.citeware.com/PublicINQ/Hoco_pay.asp,HCPD Speed Camera Program,589
+2045,1.5,NULL,Fairfax ADAPT,592
+2050,2.3,https://ekgcasi.embanet.com/payment/govolutionpayment/govolution_gettoken.aspx,EmbanetCompass Fees,562
+2052,2.3,https://bpaservice.atsol.com/g/VerifySession.aspx,Charles Co. RED Lights WEB Axsis,181
+2080,1.5,NULL,Alamo Rent-A-Car Rental Payment Services,602
+2081,1.5,NULL,Enterprise Rent-A-Car Rental Payment Services,602
+2082,1.5,NULL,National Car Rental Payment Services,602
+2089,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,My Bay State Online Payments,605
+2090,1.5,NULL,Application Fees,605
+2122,2.5,https://charlestonwvpayments.com/bando-returns/admin/verify,Business & Occupation Tax,609
+2126,1.5,NULL,Animal Management Division - Donations,611
+2130,1.5,NULL,Commercial Utility Payments,614
+2131,1.5,NULL,Residential Utility Payments,614
+2132,1.5,NULL,Traffic/Misdemeanor Fine Payments,614
+2139,2.3,https://boaprod.miamidade.gov/AviationEPayWeb/Verification.do,Miami Dade Aviation,615
+2140,2.3,https://boaprod.miamidade.gov/AviationEPayWeb/Verification.do,Miami Dade Aviation CC Process,615
+2142,2.3,https://sundancedealerdata.com/sslsecure/macro/pcg_verify.d2w/MAIN,Sundance Spas,616
+2149,1.5,NULL,Plymouth Village Water and Sewer,619
+2191,2.3,https://compass.dnr.maryland.gov/DnrCompassPortal/Payment/Sales/SessionVerification,COMPASS Payments,617
+2198,1.5,NULL,Circuit Court - Bail Bonds,575
+2207,2.3,https://php.lacda.org/UserInfo.aspx,Los Angeles County Development Authority,625
+2210,2.3,https://washcounty.info/wcmtp/tri-gvsvr.asp,Disabled 062518-Tax Claim,554
+2223,1.5,NULL,Vienna Parking Tickets - WEB,258
+2235,2.3,https://secure.memfirstweb.net/WebPayments/BOA_Verify.aspx,Phoenix Country Club Online Payment,634
+2240,1.5,NULL,DER Citations,611
+2247,2.3,https://amp.med.nyu.edu/Applicant/Application/Fee/Listener.ashx,NYU Admissions Fees,242
+2259,1.5,NULL,Town of Ball,640
+2269,1.5,NULL,Evening Post Publishing,641
+2273,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,CHC Snohomish,642
+2277,1.5,NULL,NSU Conference Fees,643
+2281,2.3,https://jasepayment.fcps.edu/jase-web/velocity/verify,TJ Online Application Portal,638
+2292,2.5,https://recorder-search.douglasnv.us/DRRGovolution/GovolutionVelocityAPI/Verify,Douglas County Recorder Web,364
+2293,2.3,https://spotbidauctions.princegeorgescountymd.gov/securitykeyupdate.aspx,OCS Spot Bid Sales,647
+2295,1.5,NULL,FFX Personal Property,13
+2297,2.5,https://charlestonwvpayments.com/parking-tickets/admin/verify ,Charleston WV Parking Tickets,584
+2307,2.3,https://tax.des.nc.gov/TPay/BOAVerification.aspx,NC ESC - Credit Card,166
+2318,1.5,NULL,Dallas Fire-Rescue Ambulance Billing,652
+2320,2.5,https://cityofdallas.payambulance.com/sessionverfication.aspx,Dallas Fire-Rescue Ambulance Billing ACH and CC,652
+2323,2.3,https://frederickcountymd.munisselfservice.com/PaymentSessionVerification.ashx,Web Payments,654
+2324,2.2,https://upgrade.velocitypayment.com/agency/msgtest1 ,IWP Water Bill GovTest,2
+2324,2.3,https://upgrade.velocitypayment.com/agency/msgtest1 ,IWP Water Bill GovTest,2
+2324,2.5,https://upgrade.velocitypayment.com/agency/msgtest1 ,IWP Water Bill GovTest,2
+2324,2.7,https://upgrade.velocitypayment.com/agency/msgtest1 ,IWP Water Bill GovTest,2
+2325,1.5,NULL,BWP License Fees GovTest,2
+2326,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,BBP Parking Fees GovTest,2
+2333,2.3,https://vehiclerelease.princegeorgescountymd.gov/securitykeyupdate.aspx,REDEMPTION - Abandoned Vehicle Unit,649
+2337,2.3,https://individualanimallicense.princegeorgescountymd.gov/securitykeyupdate.aspx,Individual License,611
+2339,1.5,NULL,MOT Charter School WEB,655
+2350,2.3,https://selfservice.ci.mequon.wi.us/MSS/PaymentSessionVerification.ashx ,Residential Utility Payments,660
+2353,2.3,https://www.dmvteen.ct.gov/dmv/do-it-online/payment/BofA/verify,CT DMV Appointment Scheduler,661
+2361,2.3,https://eauclairewi.munisselfservice.com/PaymentSessionVerification.ashx,City of Eau Claire Payments,664
+2372,2.5,https://charlestonwvpayments.com/municipal-court/mc-verify,Court Fines,668
+2374,2.3,https://www.myfloridaehpermit.com/PaymentVerification.aspx,MyFloridaEHPermit.com,669
+2375,2.3,https://vehicleauctions.princegeorgescountymd.gov/securitykeyupdate.aspx,AUCTIONS - Abandoned Vehicle Unit,649
+2377,1.5,NULL,FD Alternative Sentencing,654
+2378,2.3,https://permits.cambridgema.gov/CAPSite/Govolution_Verify.ashx,EnerGov ISD,670
+2395,1.5,NULL,UCF HealthARCH,676
+2397,2.3,https://www.law.uh.edu/admissions/payments/verification.aspx,UHLC Enrollment Fee Processing,339
+2402,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,City of Chesapeake Parking,677
+2407,2.5,https://dealerportal.minkagroup.net/api/payments/verify,Minka Group,102
+2408,2.3,https://dpiestatus.princegeorgescountymd.gov/site/public/epayments/securitykeyupdate.aspx,"DPIE Permits, Inspections and Enforcement",679
+2410,1.5,NULL,Division of Planning & Permitting,654
+2412,1.0,https://csspayments.roanokecountyva.gov/MSS/PaymentSessionVerification.ashx,Roanoke County Web Payments,680
+2412,2.3,https://csspayments.roanokecountyva.gov/MSS/PaymentSessionVerification.ashx,Roanoke County Web Payments,680
+2416,2.3,https://www.fairfaxcounty.gov/ncs/tracers/Payments/SessionVer.aspx,TRACERS,682
+2419,2.3,https://tops.tuthill.com/cssp/inc/account/inc/pcgverify.cfm,Tuthill Transfer,684
+2420,1.5,NULL,Town of Lake Arthur Fines,685
+2421,1.5,NULL,Town of Lake Arthur Utility,685
+2433,2.3,https://selfservice.clintoncountygov.com/MSS/PaymentSessionVerification.ashx,Clinton County Property Taxes,689
+2439,2.3,https://prodenv.dep.state.fl.us/DepPay/process,FDEP eCheck Payment System,231
+2440,2.3,https://apps.dnrec.state.de.us/DNRECBilling/Forms/SessionVerification.aspx,eBilling Fees,19
+2452,2.3,https://www.sunbeltrentals.com/payment/verification,Sunbelt Rentals Online Payments Service,222
+2455,2.5,https://www.mygovernmentonline.org/payments/handlervelocitysessionverification,Permits,694
+2459,2.5,https://tnpaws.tn.gov/boapay/boav.aspx,TN PAWS,695
+2460,2.3,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,Peoplesoft UHCL ACH Processing,396
+2465,1.5,NULL,Donations,258
+2470,1.5,NULL,Department of Aging,654
+2471,2.3,https://lobbyreg.dallascityhall.com/secure/RegistrationHandler.aspx,Lobbyist Registration - City of Dallas,701
+2471,2.5,https://lobbyreg.dallascityhall.com/secure/RegistrationHandler.aspx,Lobbyist Registration - City of Dallas,701
+2472,2.3,https://boast.net.ucf.edu/cgi-bin/vx-verify-prod.pl,UCF e-Check,139
+2482,2.2,https://payments.uhcl.edu/CCM/vrelay/verification,UHCL Finance Payments,396
+2483,2.3,https://munis.sussexcountyde.gov/mss/paymentSessionVerification.ashx,Sussex County Web Payments,707
+2500,2.2,https://matrix.corning-cc.edu/Govolution/Verify.aspx,Corning Community College,710
+2503,1.5,NULL,Town of Hancock Utilities,712
+2504,1.5,NULL,Town of Hancock Taxes,712
+2507,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Receivable Collection Services,713
+2508,2.5,https://billpay.silvisil.org/InternetPayments/silentpost.asp,Silvis Water & Sewer Payments,714
+2512,2.3,https://www.ladb.org/trustaccount/SessVerify.aspx,Trust Account Late Fees,715
+2525,2.3,https://www.fairfaxcounty.gov/healthpermits/pay_relay.aspx,FCHD Environmental Health-Online,84
+2529,1.5,NULL,Luna Pier Summer Taxes,719
+2534,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Millsboro Property Taxes,720
+2535,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Millsboro Utility,720
+2539,1.5,NULL,Denham Springs Website Utility Payments,721
+2547,1.5,NULL,Meadow Montessori School Payments,725
+2558,2.3,https://actweb.acttax.com/act_webdev/common/JavaSecure/VRelay/session_verification.jsp,Property Taxes,727
+2577,1.5,NULL,Town of Blades Property Taxes,729
+2579,1.5,NULL,Town of Blades Utilities,729
+2587,1.5,NULL,City of Berea Taxes,731
+2592,2.5,https://ccsbemployer.pinnacletpa.com/paynow/verify,Covered California,733
+2597,1.5,NULL,Pueblo Sales Tax Web,734
+2603,2.3,https://secure.cityofopp.com/ols/sps002.php,City of Opp Utilities,736
+2604,1.5,NULL,FCG Donations,654
+2606,2.3,https://www.floridaucc.com/onlinefiling/pcg/paymentsessionverification,Florida UCC Online eFilings,738
+2612,2.5,https://selfservice.beverlyhills.org/MSS/PaymentSessionVerification.ashx ,City of Beverly Hills Cashier,739
+2637,1.5,NULL,Medical Examiners,741
+2640,2.3,https://sundancedealerdata.com/sslsecure/macro/pcg_verify.d2w/MAIN,Dimension One Spas,616
+2641,1.5,NULL,Payment Portal,743
+2642,3.0,https://upgrade.velocitypayment.com/agency/VPSVrelay?WSDL,Vrelay3.0 test,2
+2642,30,https://upgrade.velocitypayment.com/agency/VPSVrelay?WSDL,Vrelay3.0 test,2
+2643,1.5,NULL,EPC of Hillsborough County,744
+2644,2.5,https://www.lascba.org/transaction/sessverify.aspx,LASCBA LSRBA,745
+2650,1.5,NULL,Thibodaux Regional Medical Center Payments,746
+2651,2.3,https://dpiestatus.princegeorgescountymd.gov/site/public/epayments/blocksecuritykeyupdate.aspx,DPIE Multiple/Block,679
+2668,1.5,NULL,Town of Hancock Miscellaneous,712
+2672,1.5,NULL,Cheesecake Factory,750
+2673,2.3,https://blweb.kmsd.us/business/IWPSessionVerification,City of Tustin -Business License,751
+2694,2.2,https://payments.uhcl.edu/CCM/vrelay/verification,UHCL Testing Center,396
+2702,1.5,NULL,Business Licenses,756
+2736,2.3,https://www2.co.butler.pa.us/taxes/tri-gvsvr.asp,Taxes,760
+2738,2.5,https://cltr.douglasnv.us/wp-external/pages/velocity_validate.php,Douglas County Utilites Web,364
+2739,2.3,https://pscrecordingrequest.princegeorgescountymd.gov/securitykeyupdate.aspx,Public Safety Communications,761
+2751,1.5,NULL,Ambulance Billing,654
+2755,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,ITS Outside User Requests,763
+2766,2.3,https://upgrade.velocitypayment.com/agency/msgtest1,Vrelay2.5,2
+2766,2.5,https://upgrade.velocitypayment.com/agency/msgtest1,Vrelay2.5,2
+2766,2.7,https://upgrade.velocitypayment.com/agency/msgtest1,Vrelay2.5,2
+2768,2.3,https://ecs.luzernecounty.org/taxes/tri-gvsvr.asp,Luzerne Property Taxes,766
+2772,2.3,https://www.bvstools.com/cgi-bin/ccver,Ascension Parish Clerk of Court,767
+2780,1.5,NULL,Alamo Rent-A-Car Rental Payment Services,768
+2781,1.5,NULL,Enterprise Rent-A-Car Rental Payment Services,768
+2782,1.5,NULL,National Rent-A-Car Rental Payment Services,768
+2805,1.5,NULL,ITC Billing,404
+2807,1.5,NULL,Kennett Township Utilities,776
+2816,2.3,https://www.bauer.uh.edu/payment/sessionverify.aspx,Bauer Online Printing,339
+2821,2.3,https://bofa-pcg.nccmedia.com/startachtrx.aspx,Cash In Advance Payment Tool,780
+2835,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,Vienna Township Property Taxes,784
+2842,2.3,https://www.bauer.uh.edu/rccpayment/sessionverify.aspx,Rockwell Career Center Online Payment,339
+2869,1.5,NULL,Texas College School Payments,791
+2875,2.3,https://webmail.townofmccandless.org/taxes/tri-gvsvr.asp,McCandless Real Estate/Per Capita Tax Payments,792
+2876,2.5,https://pals.piercecountywa.gov/public/onlinePaymentVerification,PALS -Online Permits,793
+2882,2.5,https://pay.vbepay.com/Payment/Verify,VI Bill Payments - CC Only,794
+2883,2.5,https://pay.vbepay.com/Payment/Verify,VI Bill Payments- ACH Only,794
+2885,2.3,https://hcfalsealarms.howardcountymd.gov/govolution/verify.ashx,Cry Wolf Program,795
+2889,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,TNT Crane & Rigging Inc Payment System,797
+2893,2.3,https://mdiro.maximus.com/mdiroportal/SessionVerification,Maximus Federal Services MD IRO,800
+2900,2.2,https://uhclparking.t2hosted.com/custom/BOA_SessionVerification.aspx,UHCL Parking Website,396
+2918,2.3,https://www.apps.insurance.maryland.gov/CompanyLicensing/PaymentVerification.aspx,Company Licensing,805
+2922,2.3,https://cogpweb.grantspassoregon.gov/MSS/PaymentSessionVerification.ashx,Finance,808
+2927,2.5,https://www.ciclt.net/sn/events/payment/vel_sess_verification.aspx?ClientCode=mdcounties,MACo Event Registration,809
+2936,2.3,https://www.bauer.uh.edu/cifpayment/sessionverify.aspx,UH Bauer Cougar Fund,339
+2937,2.3,https://permits.pima.gov/PimaACAPaymentAdapter/PaymentResponse.aspx,Pima County Online Permitting System,812
+2940,2.5,https://accessautoplus.com/unicust/boa.aspx,Auto Plus USA - Store Customers,815
+2941,2.5,https://ecommerce.autoplusap.com/verify.php,Auto Plus USA - Warehouse Customers,815
+2942,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,"National Pen Co., LLC",816
+2948,2.5,https://www.ladb.org/ocle/sessverify.aspx,LADB-OCLE-Store,715
+2955,2.3,https://permittingservices.rockvillemd.gov/CAP-EXT-RV/checkout_phase2.jsp,City of Rockville Online Permit Center,819
+2960,1.5,NULL,All Valley Washer Service Inc.,820
+2961,2.5,https://rms.uh.edu/paymentgateway/processintermediate,UH RLH EMS Web Form,339
+2962,2.5,https://payment.sdes.ucf.edu/shs/payment-lookup,Student Health eCommerce,158
+2971,2.2,https://Pay.sandiego.gov/paymentgateway/vrelay/sessionverification,DSD Online Payment,824
+3003,2.3,https://www.velocitypayment.com/integration/sungard/verify.do,LSU Alexandria Payments,833
+3007,1.5,NULL,Prosperity Home Mortgage LLC,743
+3010,1.5,NULL,Thibodaux Regional Network Development Corporation,746
+3011,2.5,https://dednrec.secure.force.com/boatreg/velocityVerification,Web BR Public,19
+3018,2.5,https://www.mptn-nsn.gov/SalesTaxService/SessionVerification.aspx,MPTN Sales Tax,838
+3022,2.5,https://DallasCityTX.portal.fasttrackgov.com/Common/BAMLVerify.aspx,CCS-TFH,840
+3027,1.5,NULL,Hillsborough County Code Enforcement,841
+3030,1.5,NULL,Tallulah Utility Payments,843
+3033,1.5,NULL,Accounts Receivable Billing,181
+3043,2.5,https://pdca.deldot.gov/FeePayment/Verify,CANAL/NORTH AREAWIDE STUDY-NC,847
+3044,2.5,https://pdca.deldot.gov/FeePayment/Verify,CANAL/NORTH SHAREDUSE PATH-NC,847
+3045,2.5,https://pdca.deldot.gov/FeePayment/Verify,CENTRAL AREAWIDE STUDY-KC,847
+3047,2.5,https://pdca.deldot.gov/FeePayment/Verify,CONSTR STAGE FEE-STATEWIDE,847
+3048,2.5,https://pdca.deldot.gov/FeePayment/Verify,INITIAL STAGE FEE-STATEWIDE,847
+3049,2.5,https://pdca.deldot.gov/FeePayment/Verify,SOUTH AREAWIDE STUDY-SC,847
+3050,2.5,https://pdca.deldot.gov/FeePayment/Verify,SOUTH SHAREDUSE PATH-SC,847
+3051,2.5,https://pdca.deldot.gov/FeePayment/Verify,TRANS IMPRV CONTRIB-STATEWIDE,847
+3052,2.5,https://www.velocitypayment.com/vbillslookup/servlet/verify.do,FFX DSWDRR Online Payments,25
+3053,2.3,https://webmail.beavercountypa.gov/taxes/tri-gvsvr.asp,Beaver County Real Estate Taxes,848
+3055,1.5,NULL,SNF Basic Web,849
+3056,1.5,NULL,Polydyne Basic Web,849
+3060,1.5,NULL,"Spectrum Laboratory Products, Inc.",851
+3064,2.5,https://egov.rowlett.com/MSS/PaymentSessionVerification.ashx,Rowlett Utilities WEB,852
+3065,2.5,https://www.mbp.state.md.us/mbp_mz_2019/payment.aspx,Board of Physicians IWP,853
+3074,2.3,https://selfservice.gillettewy.gov/MSS/PaymentSessionVerification.ashx,City of Gillette,774
+3083,1.5,NULL,Neshaminy Manor,858
+3085,2.5,https://bsdpublic.ajg.com/paymentrelay,AJGRMS WC,309
+3086,2.5,https://bsdpublic.ajg.com/paymentrelay,AJG & Co WC,309
+3087,2.2,https://boast.net.ucf.edu/cgi-bin/vx-verify-prod.pl,UCF ExecDev,156
+3087,2.3,https://boast.net.ucf.edu/cgi-bin/vx-verify-prod.pl,UCF ExecDev,156
+3088,2.5,https://secure2.orderhotlunch.com/Postback.aspx?Command=VelocitySessionVerification&Customer=DE_Clayton_FSMA,First State Military Academy Lunch Payments,859
+3089,2.3,https://real.flofr.com/datamart/sessionVerificationFLOFR.do,Consumer Finance,219
+3090,2.3,https://real.flofr.com/datamart/sessionVerificationFLOFR.do,Securities,454
+3091,2.5,https://www.andovercos.com/payments/velocitypayments,Bay State Insurance,860
+3092,2.5,https://www.andovercos.com/payments/velocitypayments,Cambridge Mutual Fire Insurance,860
+3093,2.5,https://www.andovercos.com/payments/velocitypayments,Merrimack Mutual Fire Insurance,860
+3096,1.5,NULL,Spectrum Pharmacy,851
+3098,1.5,NULL,"Bell Flavors & Fragrances, Inc.",861
+3104,2.5,https://public.myfwc.com/CrossDOI/ClsOnline/Cart.aspx?ap=sv,PCG CLS Online,864
+3113,1.5,NULL,UCF Alumni Center,153
+3114,2.5,https://www.baystate.edu/application-form/boa-callback/,Online Application,605
+3115,2.3,https://wheaton.munisselfservice.com/PaymentSessionVerification.ashx,City of Wheaton- Self Service Payments,796
+3116,2.5,https://dednrec.secure.force.com/boatreg/velocityVerification,Web BR Agent,19
+3117,2.5,https://dednrec.secure.force.com/boatreg/velocityVerification,Web BR Front Desk,19
+3118,2.5,https://dednrec.secure.force.com/boatreg/velocityVerification,Web BR Second Floor,19
+3120,2.5,https://cefa.treasurer.ca.gov/Home/BAML/Verification,CEFA,866
+3121,2.5,https://www.law.uh.edu/cle/payments/verification.aspx,UH Law Continuing Education,339
+3122,2.5,https://www.mbp.state.md.us/mbp_ah/payment.aspx,Board of Physicians-AH,853
+3123,1.5,NULL,Zoning Application Fee Payment,867
+3125,1.5,NULL,Taxi Access Program,654
+3129,2.3,https://electiondatarequest.princegeorgescountymd.gov/securitykeyupdate.aspx ,BOE,868
+3135,2.5,https://payments.ncjua-nciua.com/verification.aspx,NCIUA Online Payment,869
+3136,2.5,https://payments.ncjua-nciua.com/verification.aspx,NCJUA Online Payment,869
+3137,2.5,https://netfile.com/connect2/api/bofa/verification/production,Lobbyist Registration Fee,870
+3138,2.5,https://aca.torranceca.gov/IWPAdapter/Session.aspx,City of Torrance - Permit Center WEB,826
+3144,1.5,NULL,Building Permits,871
+3146,1.5,NULL,City Bills,871
+3148,1.5,NULL,Court Fees,871
+3150,1.5,NULL,Parks and Recreation,871
+3154,2.5,https://go.bluevolt.com/Milestone/BofAPayment/Verification,Training,872
+3155,1.5,NULL,Training-Card only web,872
+3156,2.5,https://www.summitholdings.com/SWPS/SVReqMessage,Bridgefield Casualty Ins. Co.,873
+3157,2.5,https://www.summitholdings.com/SWPS/SVReqMessage,Bridgefield Employers Ins. Co.,873
+3158,2.5,https://www.summitholdings.com/SWPS/SVReqMessage,BusinessFirst Ins.,873
+3159,2.5,https://www.summitholdings.com/SWPS/SVReqMessage,Retailers Casualty Ins. Co.,873
+3160,2.5,https://www.summitholdings.com/SWPS/SVReqMessage,RetailFirst Ins. Co.,873
+3162,2.5,https://cwa.navicoresolutions.org/processboasessionverification,Client Trust,874
+3163,2.5,https://cwa.navicoresolutions.org/processboasessionverification,Michigan Lockbox ,874
+3164,2.5,https://cwa.navicoresolutions.org/processboasessionverification,NY Lockbox,874
+3165,2.5,https://cwa.navicoresolutions.org/processboasessionverification,OR Lockbox,874
+3172,2.5,https://webapp02.montcopa.org/velocity/tcsessionverify.aspx,Montgomery Tax Claim,763
+3186,2.5,https://cltr.douglasnv.us/wp-external/pages/velocity_validate.php,Douglas County Personal Property Tax,364
+3188,2.5,https://www.cmcconstructionservices.com/Plugins/PaymentCMCBofA/VerifySession,CMC Construction Services,865
+3189,2.5,https://charlestonwvpayments.com/municipal-fees/verify,Sanitary Board and Municipal Fees,888
+3191,3.0,https://adotprod.legatus-solutions.com/azWeb/services/VPSVrelay,mCarrier,885
+3195,2.5,https://dallastx.govqa.us/WEBAPP/_rs/api/Payment/Verify,GovQA,886
+3196,2.5,https://pipeline.law.uh.edu/Payment/Verification.aspx,UHLC Pre-Law Pipeline Program,339
+3197,2.5,https://www.rapidesclerkonline.org/pgm/ccver.pgm,Rapides Parish In-House,887
+3201,2.5,https://www.fairfaxcounty.gov/ofcprovacc/api/govolution/sessionverification,FCFS Child Care Mgmt,53
+3202,1.5,NULL,Department of Code Compliance,889
+3203,2.5,https://ebonds.smith-county.com/ebondsexternal/velocity,Smith County Bail Bond Fees,890
+3206,2.5,https://www.summit.com/api/velocity-session-verification,summit.com,322
+3218,2.5,https://portal.vanguardlogistics.com/apps/payment-process/session-verification/,Vanguard Logistics,897
+3229,1.5,NULL,UCF Research Foundation,900
+3230,1.5,NULL,Florida Center for Nursing,900
+3233,2.5,https://alarmpermits.friscotexas.gov/pResponse/govltnverify.ashx,City of Frisco Alarm Unit,901
+3237,2.5,https://secure2.orderhotlunch.com/Postback.aspx?Command=VelocitySessionVerification&Customer=DE_Georgetown_SussexAcademy,Sussex Academy Lunch,902
+3242,1.5,NULL,DE Medical Marijuana WEB,391
+3288,1.5,NULL,DUI Administration,763
+3296,1.5,NULL,DE Office of Radiation,391
+3303,2.5,https://www.galvestoncounty.sbdcnetwork.net/assnfe/CartVerification.asp,SBDC Galveston County,339
+3305,2.5,https://www.fairfaxcounty.gov/eplan/paws/payrelay.aspx,LDS - PAWS/EPLAN,549
+3307,1.5,NULL,Howard County Permit Payments,921
+3308,2.5,https://dedshs.force.com/OABCC/apex/VelocityPayment,Alcohol Licensing and Enforcement System WEB,506
+3312,2.5,https://payment.sdes.ucf.edu/caps/payment-lookup,UCF CC- Online,884
+3326,2.5,https://www.sterlingagents.com/AllPoints/BillingInquiryWebService.asmx/BillSV,Sterling Premiums,934
+3327,2.3,https://redgoldgala.princegeorgescountymd.gov/securitykeyupdate.aspx,DFS - Red & Gold Senior Gala,935
+3329,2.5,https://linxproxy.co.pierce.wa.us/payment/verification.cfm,LINX,936
+3330,2.5,https://linxproxy.co.pierce.wa.us/payment/verification.cfm,LINX- Copies,936
+3331,2.5,https://charlestonwvpayments.com/ar/ar-verify,AR Payments,937
+3337,1.0,NULL,"Donations, Other Payments",735
+3338,2.5,https://vcb.frontlineinsurance.com/boa/payments/verify,GW Agent Portal First Protective Insurance Company,193
+3339,2.5,https://vcb.frontlineinsurance.com/boa/payments/verify,GW Insured Portal First Protective Insurance Co.,193
+3342,1.5,NULL,DE Lead Poisoning Prevention WEB,391
+3358,2.5,https://www.mygovernmentonline.org/payments/handlervelocitysessionverification,Parish of East Baton Rouge - Inspections IWP,944
+3360,2.5,https://charlestonwvpayments.com/spring-hill/admin/verify,Cemetery Payments,945
+3378,1.5,NULL,DE Individual RRP/Lead Services Payments,391
+3416,1.5,NULL, Animal Control Donations,975
+3421,2.5,https://delafile.delaware.gov/Payment/VerifyPaymentRequest.ashx,DE Utility eFiling,977
+3437,1.5,NULL,UCF COM Basic Web,251
+3442,2.5,https://sdpdalarmpermits.sandiego.gov/boa/verify.ashx,Security Alarm Tracking System (SATS),476
+3448,2.5,https://crimsearch.tangiclerk.org/cgi-bin/ccver ,Criminal Dept.,980
+3453,2.2,https://pay.sandiego.gov/paymentgateway/vplusrelay22/sessionverification,DSD ACA Payment,824
+3453,2.3,https://pay.sandiego.gov/paymentgateway/vplusrelay22/sessionverification,DSD ACA Payment,824
+3483,2.5,https://webapp02.montcopa.org/velocity/pcsessionverify.aspx,Planning Commission 247,763
+3493,2.5,https://dda.force.com/pesticide/apex/VelocityVerification,Pesticide Management,998
+3510,2.5,https://dallastx.govqa.us/WEBAPP/_rs/api/Payment/Verify,GovQA-Police Open Records,1001
+3511,2.5,https://hdweb.brgov.com/apps/courts/velocityverification.asp,Parish City Court - Integrated Web Payment,972
+3516,2.5,https://secure.cabconnect.com/cardone/services/bacnotify.ashx,Cab Connect,1003
+3531,1.5,NULL,Agriculture Ag Compliance WEB,1006
+3535,1.5,NULL,Agriculture Food Products WEB,1006
+3545,1.5,NULL,Agriculture Plant Industries WEB,1006
+3553,1.5,NULL,Agriculture Weights and Measures WEB,1006
+3556,1.5,NULL,DE School Conferences,1009
+3557,1.5,NULL,Agriculture Harness WEB,1006
+3561,2.5,https://sheriff365.stpso.com/services/api/Payments/Verify,STPSO Traffic Fines,1013
+3573,2.7,https://paytax.smith-county.com/WebPay/Velocity.aspx,WEB Smith County Property Tax Department,1017
+3577,2.5,https://banner.dtcc.edu/dtcc/!rts_gateway_vps.verify,DTCC Owens Web,325
+3578,2.5,https://banner.dtcc.edu/dtcc/!rts_gateway_vps.verify,DE DTCC TERRY WEB,327
+3579,2.5,https://banner.dtcc.edu/dtcc/!rts_gateway_vps.verify,DE DTCC STANTON WEB,326
+3580,2.5,https://banner.dtcc.edu/dtcc/!rts_gateway_vps.verify,DE DTCC WILMINGTON WEB,328
+3581,1.5,NULL,Circuit Court Transcription Services,654
+3603,1.5,NULL,EXIG MED BILLING - GRIMC,1023
+3609,2.5,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,UHD Admissions Self Service,431
+3610,1.5,NULL,DSU Career Services & Student Employment,993
+3611,1.5,NULL,Barry Rosenberg  MD PC Payments,1024
+3614,2.5,https://backgroundcheckcenter.dhss.delaware.gov/Services/EpxProcess.aspx,Background Check Center,1027
+3625,1.5,NULL,EXIG MED BILLING - PULSE WNY,1031
+3626,1.5,NULL,EXIG MED BILLING - WNYIMC,1032
+3634,1.5,NULL,COMBI/MTC,1034
+3653,1.5,NULL,Hillis-Carnes Basic Web,1037
+3671,2.3, https://epay.countyofelkpa.com/taxes/tri-fetch.asp,Delinquent Real Estate Tax,1042
+3680,2.5,https://sheriff365.stpso.com/services/api/Payments/Verify,STPSO Court Fines,1013
+3690,1.5,NULL,Fairfax Alcohol Safety Action Program (ASAP) WEB,34
+3691,2.5,https://charlestonwvpayments.com/service-fee/verify,Charleston WV City Service Fee,1047
+3700,1.5,NULL,Richmond Metropolitan Transportation Authority,1049
+3706,2.5,https://www.citeware.com/PublicINQ/CharlesPay.asp,CCSO Web Speed Camera Program,181
+3720,1.5,NULL,Stein Sperling Bennett De Jong Driscoll PC,1052
+3723,2.5,https://charlestonwvpayments.com/permits/verify,City Building Permits,1053
+3732,2.3,https://real.flofr.com/datamart/sessionVerificationFLOFR.do,Office of Financial Regulation,1055
+3736,1.5,NULL,Rock Island - Milan School District #41,1056
+3772,1.5,NULL,Early College High School @ DSU,1063
+3775,1.5,NULL,Columbia Association,1064
+3777,2.5,https://charlestonwvpayments.com/city-payments/verify,Charleston Miscellaneous Payments,1065
+3800,1.5,NULL,Frederick County Liquor Board,654
+3803,1.5,NULL,BOLC - Online Payments,1076
+3809,2.5,https://UCF.starrezhousing.com/StarRezPortal/Payment/ProcessRedirectResponse/BankOfAmerica/Verification,UCF Housing and Residence Life E-Com StarRez  ,143
+3816,1.5,NULL,OCA Clients Fund,1080
+3846,1.5,NULL,LDS-Elevator Permits,549
+3849,2.5,https://dsb.force.com/apex/PKGVelocityVerification,DE Angel Investor,1092
+3851,1.5,NULL,Colonial School District - Preschool,1094
+3852,1.5,NULL,Fairfax Transient Occupancy Tax - County,13
+3853,1.5,NULL,Fairfax Transient Occupancy Tax - Town,13
+3855,1.5,NULL,DE Bedding Program,391
+3859,1.5,NULL,CAS Engineering,1095
+3871,2.5,https://www.fairfaxcounty.gov/bpolpay/GovSessionVerification.aspx,Fairfax County BPOL,13
+3874,2.5,https://piercecountywa.govqa.us/WEBAPP/_rs/api/Payment/Verify,Pierce County Public Records,1099
+3883,1.5,NULL,Milford School District - AP Exams,1102
+3890,2.5,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,UHV Admissions Application Fee,439
+3893,2.5,https://www.ladb.org/AttyPmt/SessVerify.aspx,Disciplinary Cost Payments,715
+3898,1.5,NULL,Odyssey Charter School Payments,1106
+3904,2.2, https://pay.sandiego.gov/paymentgateway/vrelay/SessionVerification/,Get It Done - Environmental Services Payments,1108
+3908,1.5,NULL,DE Investor Protection Unit,989
+3909,2.5,https://www.fairfaxcounty.gov/secure/EPayRE/GovSessionVerification.aspx,Fairfax County Real Estate - Tax Portal,13
+3910,2.5,https://www.fairfaxcounty.gov/dta_mobileepayre/GovSessionVerification.aspx,Fairfax County Real Estate - EPAY,13
+3913,2.7,https://Suffolk.munisselfservice.com/PaymentSessionVerification.ashx,Delinquent Property Taxes,692
+3922,1.5,NULL,Fire Inspection Electronic Payment,1111
+3924,1.5,NULL,EF Mortgage Loan Payments - Non Point Source,19
+3925,2.5,https://www.fairfaxcounty.gov/dta_mobileepay/GovSessionVerification.aspx,Fairfax County Personal Property - EPAY,13
+3926,2.5,https://www.fairfaxcounty.gov/secure/EPayPP/GovSessionVerification.aspx,Fairfax County Personal Property - Tax Portal,13
+3935,1.5,NULL,Kodiak Island Borough Taxes,1112
+3936,1.5,NULL,Kodiak Island Borough Solid Waste Disposal,1112
+3939,2.5,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,UHD PeopleSoft CC Manual Processing,431
+3940,2.5,https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/s/WEBLIB_UHS_BOA2.ISCRIPT1.FieldFormula.IScript_uhs_process,Peoplesoft UHD ACH Processing,431
+3941,1.5,NULL,Borough of Topton Utility,1114
+3947,1.5,NULL,Scrap Tire Program,19
+3948,1.5,NULL,Solid Waste Transporter,19
+3949,1.5,NULL,OEA FDS Late Fee,1116
+3951,2.5,https://stpso.govqa.us/WEBAPP/_rs/api/Payment/Verify,STPSO Public Records Center,1117
+3953,2.5,https://onestop.delaware.gov/VelocityPayment,State of Delaware - One Stop Business,44
+3955,1.5,NULL,FOIA Automatic Payments,19
+3960,1.5,NULL,Kern County HR - Health Benefits,1120
+3962,2.7,https://martinsville-va.munisselfservice.com/PaymentSessionVerification.ashx,Real Estate Taxes,1121
+3963,2.7,https://martinsville-va.munisselfservice.com/PaymentSessionVerification.ashx,Personal Property Taxes,1121
+3964,2.7,https://martinsville-va.munisselfservice.com/PaymentSessionVerification.ashx,Utility Bills,1121
+3965,2.7,https://martinsville-va.munisselfservice.com/PaymentSessionVerification.ashx,Business Licenses,1121
+3966,2.7,https://martinsville-va.munisselfservice.com/PaymentSessionVerification.ashx,General Bills,1121
+3999,1.5,NULL,Delcastle Insurance Payments,1122
+4000,1.5,NULL,Online Rental Payment,1123
+4002,1.5,NULL,DE Food Permits Web,391
+4011,1.5,NULL,DE Volunteer Fire Service Revolving Loan Fund,1125

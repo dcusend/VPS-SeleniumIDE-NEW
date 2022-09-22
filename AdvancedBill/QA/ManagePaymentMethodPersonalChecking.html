@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa.velocitypayment.com/vbills/" />
+<title>ManagePaymentMethodPersonalChecking</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ManagePaymentMethodPersonalChecking</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://qa.velocitypayment.com/vbills/testvbillsenrolled/login.go</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>66655550138</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>madehakhan909@</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=loginSubmitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Payment Methods</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[name=&quot;Add Payment Method&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{Math.floor(Math.random()*11111)}</td>
+	<td>myRandomNickName</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=paymentMethodType</td>
+	<td>label=Personal Checking</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nickName</td>
+	<td>${myRandomNickName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=routingNumber</td>
+	<td>055002707</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bankAccountNumber</td>
+	<td>88888888888888888</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmBankAccountNumber</td>
+	<td>88888888888888888</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.line1</td>
+	<td>412</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.line2</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.zipCode</td>
+	<td>22041</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.city</td>
+	<td>Falls Church</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=EN Bill</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Payment Methods</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>SEAYg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>SONYAg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.line1</td>
+	<td>412g</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.line2</td>
+	<td>123g</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[@id='paymentMethodAddress[personal checking 12]']/td[2]</td>
+	<td>Billing Address: <br /> 412g<br /> 123g<br /> Falls Church,&nbsp;&nbsp;Virginia ,&nbsp;&nbsp;22041<br /> United States</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to delete'${myRandomNickName}'?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log Out</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

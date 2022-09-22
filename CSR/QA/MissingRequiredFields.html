@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa.velocitypayment.com/csr/" />
+<title>MissingRequiredFields</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MissingRequiredFields</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>testvgateway</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogIn</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>testvgateway</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>user590</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=mainPage:landingpage:selectApp</td>
+	<td>label=AutoCSRVIB</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>can</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${can}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:clientAccountNumber</td>
+	<td>${can}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainPage:landingpage:ContinueBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:showDialogButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[1]/div/div[2]/span</td>
+	<td>Customer First Name is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[2]/div/div[2]/span</td>
+	<td>Customer Last Name is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[3]/div/div[2]/span</td>
+	<td>Customer Street Address is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[4]/div/div[2]/span</td>
+	<td>Customer City is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[5]/div/div[2]/span</td>
+	<td>Customer State is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[6]/div/div[2]/span</td>
+	<td>Customer ZIP Code is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[7]/div/div[2]/span</td>
+	<td>Payer First Name is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[8]/div/div[2]/span</td>
+	<td>Payer Last Name is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[9]/div/div[2]/span</td>
+	<td>Card Number is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[10]/div/div[2]/span</td>
+	<td>CVV2 is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[11]/div/div[2]/span</td>
+	<td>Card Expiration Year is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[12]/div/div[2]/span</td>
+	<td>Transaction Category is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[13]/div/div[2]/span</td>
+	<td>Payer City is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[14]/div/div[2]/span</td>
+	<td>Payer State is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[15]/div/div[2]/span</td>
+	<td>Payer Street Address is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mainPage:landingpage:growl_container']/div[16]/div/div[2]/span</td>
+	<td>Payer ZIP Code is required</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

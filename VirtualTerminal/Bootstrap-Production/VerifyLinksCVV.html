@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksCVV</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksCVV</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@1234567!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access User Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=CVV Policy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#PRESTO &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#PRESTO &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#BasicBillPresentment &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#BasicBillPresentment &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#WebServicesGateway &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#WebServicesGateway &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#IntegratedWebPayments &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#IntegratedWebPayments &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#CSR &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#CSR &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#ScheduledPayments &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#ScheduledPayments &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#AdvancedBillPresentment &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#AdvancedBillPresentment &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#VirtualTerminal &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>AutoDualCFtpProd</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#VirtualTerminal &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#BasicWebPayments &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BWP License Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#BasicWebPayments &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[11]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#MultipleBillPayment &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>TestEnhanced MultiBill</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#MultipleBillPayment &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[12]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#SERVICES &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BWP License Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#SERVICES &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[13]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[13]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Gateway &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#Gateway &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[14]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#IntegratedBilling &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td>BBP Parking Fees GovTest</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#IntegratedBilling &gt; div.card-body.ml-4 &gt; a.ml-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

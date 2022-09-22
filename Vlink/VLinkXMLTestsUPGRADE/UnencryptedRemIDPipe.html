@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dev-algorithm.govolution.com/vlinktest/Upgrade/version_2_0/" />
+<title>UnencryptedRemIDPipe</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">UnencryptedRemIDPipe</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>Math.round (Math.random() * 99999)</td>
+	<td>ran1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${ran1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.round (Math.random() * 999)</td>
+	<td>ran2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${ran2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.round (Math.random() * 9999)</td>
+	<td>ran3</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${ran3}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${ran1}|${ran2}|${ran3}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>authcap.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=transaction_type</td>
+	<td>104</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=message_version</td>
+	<td>2.0C</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=remittance_id</td>
+	<td>${ran1}|${ran2}|${ran3}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=application_id</td>
+	<td>2326</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>govo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>testo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=response_format</td>
+	<td>fixed_width</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=category</td>
+	<td>RETL</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=transaction_id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=approval_code</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_name</td>
+	<td>Jon Latham</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_address</td>
+	<td>2311 york road</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_address2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_city</td>
+	<td>Arlington</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_state</td>
+	<td>VA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_zip</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=country_id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=amount</td>
+	<td>3.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_exmo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_exyr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cvv_data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cvv_state</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=track_data</td>
+	<td>%B4012000033330026^FDMS TEST CARD&nbsp;&nbsp;&nbsp;/VISA^251210054321000000000000000&nbsp;&nbsp;150&nbsp;&nbsp;A?;4012000033330026=25121011000012345678?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=track_1_data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=track_2_data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=entry_mode</td>
+	<td>track</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=order_number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tax_amount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=charge_description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=client_account_number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=bill_payment_indicator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Transaction approved, no errors</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=pre</td>
+	<td>resText</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${resText}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['resText'].substring(19,29).trim()</td>
+	<td>tranID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${tranID}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

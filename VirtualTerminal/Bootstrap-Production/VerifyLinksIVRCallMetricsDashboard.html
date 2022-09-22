@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksIVRCallMetricsDashboard</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksIVRCallMetricsDashboard</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>hello!3333</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access VTPS-V-TPS test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>V-TPS - Main Menu [Test Customer]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>exact:Customer:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customerId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='reportForm']/div/div/div/div/div[2]/label</td>
+	<td>IVR Phone Number:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=ivrPhoneNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='reportForm']/div/div/div/div/div[3]/label</td>
+	<td>Start Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='reportForm']/div/div/div/div/div[4]/label</td>
+	<td>End Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=timezone</td>
+	<td>PDT</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=submitButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=resetButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=ivrPhoneNumber</td>
+	<td>5717306071</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.tile-title.find_user</td>
+	<td>Call Metrics Report</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=th.table_head_center</td>
+	<td>IVR Number</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='callmetrics']/thead/tr/th[2]</td>
+	<td>Customer</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='callmetrics']/thead/tr/th[3]</td>
+	<td>Application</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='callmetrics']/thead/tr/th[4]</td>
+	<td># Calls</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='callmetrics']/thead/tr/th[5]</td>
+	<td>Total Duration (Mins)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='callmetrics']/thead/tr/th[6]</td>
+	<td>Average Duration (Mins)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='callmetrics']/thead/tr/th[7]</td>
+	<td># Transfers</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#callEndPoints &gt; thead &gt; tr &gt; th.table_head_center</td>
+	<td>Call End Point</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#percetages &gt; thead &gt; tr &gt; th.table_head_center</td>
+	<td>IVR Metric</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='percetages']/thead/tr/th[2]</td>
+	<td>Percentage</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#languageCounts &gt; thead &gt; tr &gt; th.table_head_center</td>
+	<td>Language</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-md-3 &gt; label.justify-content-start</td>
+	<td>Adjust Dates :</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=go</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://demo.velocitypayment.com/admin/" />
+<title>Search Profile using all the Search Criteria one by one </title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Search Profile using all the Search Criteria one by one </td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>imtiazdemo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogin</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>mkhan</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access No Special Chars Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>selenium</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='maincontent']/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[2]/td</td>
+	<td>Company Name:&nbsp;&nbsp;selenium</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=NEW SEARCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchField</td>
+	<td>label=Address only</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>selenium road</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=NEW SEARCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>selenium</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='maincontent']/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[3]/td</td>
+	<td>First Name &amp; Last Name:&nbsp;&nbsp;selenium selenium</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=NEW SEARCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchField</td>
+	<td>label=Comment only</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Return to Main Menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchField</td>
+	<td>label=Company Name</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='maincontent']/table/tbody/tr[2]/td</td>
+	<td>selenium<br /> selenium selenium <br /> selenium&nbsp;&nbsp;&nbsp;<br /> CHICAGO ,&nbsp;&nbsp;IL&nbsp;&nbsp;&nbsp;&nbsp;60604 <br /> United States</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Return to Main Menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchField</td>
+	<td>label=Email Address</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>selenium@gmail.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Return to Main Menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchField</td>
+	<td>label=City only</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>CHICAGO</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='maincontent']/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[5]/td</td>
+	<td>City &amp; State &amp; Zip Code: CHICAGO ,&nbsp;&nbsp;IL&nbsp;&nbsp;&nbsp;&nbsp;60604</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=NEW SEARCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchField</td>
+	<td>label=State/Province</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>illinois</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='maincontent']/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[5]/td</td>
+	<td>City &amp; State &amp; Zip Code: CHICAGO ,&nbsp;&nbsp;IL&nbsp;&nbsp;&nbsp;&nbsp;60604</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=NEW SEARCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchField</td>
+	<td>label=ZIP/Postal Code</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>60604</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='maincontent']/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[5]/td</td>
+	<td>City &amp; State &amp; Zip Code: CHICAGO ,&nbsp;&nbsp;IL&nbsp;&nbsp;&nbsp;&nbsp;60604</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=NEW SEARCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=here</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa.velocitypayment.com/admin/" />
+<title>PCRecrDeferred</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">PCRecrDeferred</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeExpression</td>
+	<td>javascript{var date = new Date();date.getFullYear() + '' + ((date.getMonth()+1&lt;10)?('0'+(date.getMonth()+1)):(date.getMonth()+1)) + '' + ((date.getDate()+1&lt;10)?('0'+(date.getDate()+1)):(date.getDate()+1)) + '' + date.getHours() + '' + date.getMinutes() + '' + date.getSeconds();}</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${date}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>imtiaz</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogIn</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>hello2222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access Ahmed Payment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>brianollie</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=brianollie</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=form[name=&quot;PaymentPlanForm&quot;] &gt; input[name=&quot;createButton&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>myVar</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars.myVar&lt;=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${myVar}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=amount</td>
+	<td>10.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined1</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined2</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=paymentMethodID</td>
+	<td>label=Checking ****1111</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=recurring_Amount_radio</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=paymentPlanTypeId</td>
+	<td>label=ONE TIME</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=startD</td>
+	<td>01/10/2019</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:Payment plan creation successful.*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Return to Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=form[name=&quot;PaymentPlanForm&quot;] &gt; input[name=&quot;createButton&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars.myVar++;}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeExpression</td>
+	<td>javascript{var date = new Date();date.getFullYear() + '' + ((date.getMonth()+1&lt;10)?('0'+(date.getMonth()+1)):(date.getMonth()+1)) + '' + ((date.getDate()+1&lt;10)?('0'+(date.getDate()+1)):(date.getDate()+1)) + '' + date.getHours() + '' + date.getMinutes() + '' + date.getSeconds();}</td>
+	<td>date1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${date1}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

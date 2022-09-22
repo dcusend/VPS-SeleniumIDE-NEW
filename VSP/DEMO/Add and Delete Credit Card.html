@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://demo.velocitypayment.com/admin/" />
+<title>Create and Modify Profile</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create and Modify Profile</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>imtiazdemo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogin</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>mkhan</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access No Special Chars Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=profileName</td>
+	<td>qqq</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address1</td>
+	<td>qqqq</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=postalCode</td>
+	<td>15220</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>PITTRBURGH</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>label=PA-Pennsylvania</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='maincontent']/table/tbody/tr[2]/td</td>
+	<td>qqqq&nbsp;&nbsp;&nbsp;<br /> PITTRBURGH ,&nbsp;&nbsp;PA&nbsp;&nbsp;&nbsp;&nbsp;15220 <br /> United States</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Modify Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=companyName</td>
+	<td>aaaaaaaaa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>aaaaaa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=middleName</td>
+	<td>aaaaaaaa</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=modifyButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=deleteButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=here</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

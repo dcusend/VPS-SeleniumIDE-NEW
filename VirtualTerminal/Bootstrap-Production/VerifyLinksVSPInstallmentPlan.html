@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksVSPInstallmentPlan</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksVSPInstallmentPlan</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@1234567!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access BWP License Fees GovTest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>PaymentPlanProfile</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchField</td>
+	<td>label=Name only</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=PaymentPlanProfile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=form[name=&quot;PaymentPlanForm&quot;] &gt; button[name=&quot;createButton&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h4.line-head</td>
+	<td>regexp:Create Payment Plan.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h6.text-primary</td>
+	<td>regexp:Step1: Select Account Information.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='paymentPlanForm']/div/div[4]/h6</td>
+	<td>regexp:Step 2: Select Payment Method.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='paymentPlanForm']/div/div[7]/h6</td>
+	<td>regexp:Step 3: Payment Plan Type.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='paymentPlanForm']/div/div[13]/h6</td>
+	<td>regexp:Review Payment Plan.*</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=amount</td>
+	<td>10.00</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=paymentMethodID</td>
+	<td>label=MasterCard ****0015</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=installment_plan_radio</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='divFrequencyOfPayments']/div/h6</td>
+	<td>regexp:Select Payment Plan Frequency.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=paymentPlanTypeId</td>
+	<td>Select Payment Plan Type ONE TIME DAILY WEEKLY MONTHLY QUARTERLY ANNUAL</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=paymentPlanTypeId</td>
+	<td>label=DAILY</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=numberOfPayments</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>8000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong</td>
+	<td>2 DAILY</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='paymentSummaryLine1']/strong[2]</td>
+	<td>5.00</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=cancelButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

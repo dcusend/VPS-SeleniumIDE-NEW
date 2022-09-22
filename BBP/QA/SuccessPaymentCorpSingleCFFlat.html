@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa.velocitypayment.com/" />
+<title>SuccessPaymentCorpSingleCFFlat</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SuccessPaymentCorpSingleCFFlat</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/vbillslookup/lookup/testvbillsautoscf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=field1</td>
+	<td>666160</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=field2</td>
+	<td>666161</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=field3</td>
+	<td>666162</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=paysubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='paymentMethod'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.required</td>
+	<td>Required fields are highlighted with an asterisk.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.vrelay-header</td>
+	<td>Please enter the following billing information about your payment:</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=amount</td>
+	<td>10.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined2</td>
+	<td>UDF2 Data3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined3</td>
+	<td>UDF3 Data3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billingCompanyname</td>
+	<td>My Company</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=routingNumber</td>
+	<td>256072691</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=accountNumber</td>
+	<td>33333333</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmAccountNumber</td>
+	<td>33333333</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=ein</td>
+	<td>123456789</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billingAddress</td>
+	<td>2311 york road</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billingAddress2</td>
+	<td>suite 600</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing-zip-input</td>
+	<td>21054</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=emailAddress</td>
+	<td>iahmed@govolution.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkedAcceptCondition</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=achSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.vrelay-header</td>
+	<td>Please verify the following information:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.payor_opt</td>
+	<td>exact:Is this information correct?</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=confirmNotifyAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td &gt; p</td>
+	<td>This transaction is subject to a Convenience Fees of $2.00.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[2]</td>
+	<td>Payment Amount:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[3]</td>
+	<td>$10.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[2]/td[2]</td>
+	<td>Convenience Fees:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[2]/td[3]</td>
+	<td>$2.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=b</td>
+	<td>Total Amount:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[3]/b</td>
+	<td>$12.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/p[2]</td>
+	<td>One transaction in the amount of $12.00 will appear on your bank statement.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=convFeeNotifyAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>15000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>$10.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[8]/td[2]</td>
+	<td>$2.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[9]/td[2]</td>
+	<td>Single Transaction</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[10]/td[2]</td>
+	<td>$12.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[11]/td[2]</td>
+	<td>Debit</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[12]/td[2]</td>
+	<td>regexp:Corporate.*</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

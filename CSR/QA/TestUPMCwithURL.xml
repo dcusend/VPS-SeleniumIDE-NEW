@@ -1,0 +1,11 @@
+<testdata>
+<vars CallerIDURL="csr/servlet/caller.do?callerID=2408939844"  CustName="TestVgateway Cust" AppName="QAUPMCAdv" CAN="0220224699" Fname="MICHAEL" LName="GUAJARDO" Address1="31318 70TH ST." City="SALEM" State="WI" ZIP="531680000"/>
+<vars CallerIDURL="csr/servlet/caller.do?callerID=2404861529"  CustName="TestVgateway Cust" AppName="QAUPMCAdv" CAN="0220218811" Fname="LYNN" LName="BURNETT" Address1="1328 53RD AVE." City="KENOSHA" State="WI" ZIP="531440000"/>
+<vars CallerIDURL="csr/servlet/caller.do?callerID=2408937003"  CustName="testincontact" AppName="Test Advanced IVR" CAN="777777" Fname="Jane" LName="Potter" Address1="777 Oak Street" City="ARLINGTON" State="VA" ZIP="22201"/>
+<vars CallerIDURL="csr/servlet/caller.do?callerID=2408937004"  CustName="testincontact" AppName="Test Advanced IVR" CAN="444444" Fname="Fred" LName="Smith" Address1="444 Main Street" City="ARLINGTON" State="VA" ZIP="22201"/>
+<!--<vars CallerIDURL="PRESTO/rest/json/presto/get?callerID=2408939844"  CustName="TestVgateway Cust" AppName="QAUPMCAdv" CAN="0220224699" Fname="MICHAEL" LName="GUAJARDO" Address1="31318 70TH ST." City="SALEM" State="WI" ZIP="531680000"/>
+<vars CallerIDURL="PRESTO/rest/json/presto/get?callerID=2404861529"  CustName="TestVgateway Cust" AppName="QAUPMCAdv" CAN="0220218811" Fname="LYNN" LName="BURNETT" Address1="1328 53RD AVE." City="KENOSHA" State="WI" ZIP="531440000"/>
+<vars CallerIDURL="PRESTO/rest/json/presto/get?callerID=2408937003"  CustName="testincontact" AppName="Test Advanced IVR" CAN="777777" Fname="Jane" LName="Potter" Address1="777 Oak Street" City="ARLINGTON" State="VA" ZIP="22201"/>
+<vars CallerIDURL="PRESTO/rest/json/presto/get?callerID=2408937004"  CustName="testincontact" AppName="Test Advanced IVR" CAN="444444" Fname="Fred" LName="Smith" Address1="444 Main Street" City="ARLINGTON" State="VA" ZIP="22201"/>-->
+</testdata>
+

@@ -1,0 +1,71 @@
+USE velocity
+--------------------------------------------------------------------
+
+DECLARE @VI_CC varchar(16)  = '4847184181519134'
+	,   @VI_MM varchar(2)   = '06'
+	,	@VI_YYYY varchar(4) = '2025'
+	
+	,   @VD_CC varchar(16)  = '4847184181519134'
+	,   @VD_MM varchar(2)   = '06'
+	,	@VD_YYYY varchar(4) = '2025'
+	
+	,   @MC_CC varchar(16)  = '5567080011440654'
+	,   @MC_MM varchar(2)   = '01'
+	,	@MC_YYYY varchar(4) = '2020'
+	
+	,   @MD_CC varchar(16)  = '5567080011440654'
+	,   @MD_MM varchar(2)   = '01'
+	,	@MD_YYYY varchar(4) = '2020'
+	
+	,	@DI_CC varchar(16)  = '6011000998940880'
+	,   @DI_MM varchar(2)   = '04'
+	,	@DI_YYYY varchar(4) = '2019'
+	
+	,   @AX_CC varchar(16)  = '341111599241000'
+	,   @AX_MM varchar(2)   = '12'
+	,	@AX_YYYY varchar(4) = '2018'
+
+----------------------------------------------------------------------
+SELECT DISTINCT
+'|vars Description="ManualMOTOReqFields" expText="Transaction approved, no errors" Result="Pass" rn="1" tranType="104" msgVer="2.0C" appID="'
++CONVERT(varchar,xrf.APPLICATION_ID)
++'" userName="'
++apd.username
++'" password="'
++apd.[password]
++'" responseFormat="fixed_width" category="MOTO" tranID="" apprCode="" name="Jackson burra" al1="2311 york road" al2="" city="" state="" zip="22201" country="" amount="1.00" cardnumber="'
++CASE WHEN xrf.CREDIT_CARD_CODE IN ('VI') THEN @VI_CC
+	  WHEN xrf.CREDIT_CARD_CODE IN ('VD') THEN @VD_CC
+	  WHEN xrf.CREDIT_CARD_CODE IN ('MC') THEN @MC_CC
+	  WHEN xrf.CREDIT_CARD_CODE IN ('MD') THEN @MD_CC
+	  WHEN xrf.CREDIT_CARD_CODE IN ('DI') THEN @DI_CC
+	  WHEN xrf.CREDIT_CARD_CODE IN ('AX') THEN @AX_CC
+  END
++'" month="'
++CASE WHEN xrf.CREDIT_CARD_CODE IN ('VI') THEN @VI_MM
+	  WHEN xrf.CREDIT_CARD_CODE IN ('VD') THEN @VD_MM
+	  WHEN xrf.CREDIT_CARD_CODE IN ('MC') THEN @MC_MM
+	  WHEN xrf.CREDIT_CARD_CODE IN ('MD') THEN @MD_MM
+	  WHEN xrf.CREDIT_CARD_CODE IN ('DI') THEN @DI_MM
+	  WHEN xrf.CREDIT_CARD_CODE IN ('AX') THEN @AX_MM
+  END
++'" year="'
++CASE WHEN xrf.CREDIT_CARD_CODE IN ('VI') THEN @VI_YYYY
+	  WHEN xrf.CREDIT_CARD_CODE IN ('VD') THEN @VD_YYYY
+	  WHEN xrf.CREDIT_CARD_CODE IN ('MC') THEN @MC_YYYY
+	  WHEN xrf.CREDIT_CARD_CODE IN ('MD') THEN @MD_YYYY
+	  WHEN xrf.CREDIT_CARD_CODE IN ('DI') THEN @DI_YYYY
+	  WHEN xrf.CREDIT_CARD_CODE IN ('AX') THEN @AX_YYYY
+  END
++'" cvv="" cvvState="" trackData="" track1Data="" track2Data="" entryMode="" email="" orderNum="" tax="" charge="" CAN="" BillPayInd="" udf1="" udf2="" udf3="" udf4="" udf5="" udf6="" udf7="" udf8="" udf9="" udf10="" tTypeVoid="106" mvVoid="2.0C" appIDVoid="'
++CONVERT(varchar,xrf.APPLICATION_ID)
++'" userVoid="'
++apd.username
++'" pwdVoid="'
++apd.[password]
++'" resFormVoid="fixed_width" origtTypeVoid="104" trackDataVoid="" track1DataVoid="" track2DataVoid="" taxVoid="" CANVoid=""/\'
+FROM APPLICATION_PRODUCT_DEPLOYMENT apd
+JOIN VLINK_DEPLOYMENT_CARD_TYPE_X_REF xrf
+ON apd.application_id = xrf.APPLICATION_ID
+AND apd.product_id = 1
+WHERE apd.application_id IN (1897,2327,2379,2409,2923)

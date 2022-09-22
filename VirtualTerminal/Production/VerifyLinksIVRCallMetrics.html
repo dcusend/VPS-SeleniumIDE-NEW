@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksIVRCallMetrics</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksIVRCallMetrics</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@1234567!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=IVR Call Metrics</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>V-TPS - Main Menu [Test Customer]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>exact:Customer:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customerId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='reportForm']/label[2]</td>
+	<td>IVR Phone Number:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=ivrPhoneNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='reportForm']/label[3]</td>
+	<td>Start Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=cal-button-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='reportForm']/label[4]</td>
+	<td>End Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=cal-button-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='reportForm']/label[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=timezone</td>
+	<td>PDT</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=submitButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=resetButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

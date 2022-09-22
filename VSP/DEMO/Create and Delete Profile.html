@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://demo.velocitypayment.com/admin/" />
+<title>Create and Delete Profile </title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create and Delete Profile </td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>imtiazdemo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogin</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>mkhan</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access No Special Chars Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=profileName</td>
+	<td>hhhh</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=companyName</td>
+	<td>hhhh</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=middleName</td>
+	<td>55555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastName</td>
+	<td>55555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address1</td>
+	<td>2566</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address2</td>
+	<td>6666</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=postalCode</td>
+	<td>22041</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=emailAddress</td>
+	<td>mkhan@govolution.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=homeAreaCode</td>
+	<td>125</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=homePrefixNumber</td>
+	<td>555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=homeSuffixNumber</td>
+	<td>5555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=workAreaCode</td>
+	<td>652</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=workPrefixNumber</td>
+	<td>555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=workSuffixNumber</td>
+	<td>2124</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=workExtension</td>
+	<td>2222</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobileAreaCode</td>
+	<td>132</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobilePrefixNumber</td>
+	<td>326</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobileSuffixNumber</td>
+	<td>6566</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>hello hello hello </td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='maincontent']/table/tbody/tr[2]/td</td>
+	<td>hhhh<br /> 555 55555 55555 <br /> 2566&nbsp;&nbsp;&nbsp;<br /> 6666&nbsp;&nbsp;&nbsp;<br /> FALLS CHURCH ,&nbsp;&nbsp;VA&nbsp;&nbsp;&nbsp;&nbsp;22041 <br /> United States</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=deleteButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=NEW SEARCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>hhhh</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>No Results</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=here</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

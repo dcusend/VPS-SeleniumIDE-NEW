@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VSP-SearchProfile</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VSP-SearchProfile</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@1234567!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access BWP License Fees GovTest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>name=searchField</td>
+	<td>Name only Address only City only State/Province ZIP/Postal Code Comment only Company Name Account Number Username only Email Address</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchString</td>
+	<td>ProfileToBeSearched</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=searchField</td>
+	<td>label=Name only</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=searchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=ProfileToBeSearched</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=ProfileToBeSearched</td>
+	<td>ProfileToBeSearched</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=ProfileToBeSearched</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td &gt; span</td>
+	<td>Administrative Profile</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td/table/tbody/tr/td/table/tbody/tr[2]/td</td>
+	<td>First Name &amp; Last Name:&nbsp;&nbsp;Andy Roberts</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[3]/td</td>
+	<td>Address Line 1:&nbsp;&nbsp;8889 Howrah Bridge</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[4]/td</td>
+	<td>City &amp; State &amp; Zip Code: COCKEYSVILLE ,&nbsp;&nbsp;MD&nbsp;&nbsp;&nbsp;&nbsp;21030</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[5]/td</td>
+	<td>exact:Country:&nbsp;&nbsp;United States</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>Credit Cards</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.text-left</td>
+	<td>VisaToBeSearched</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='accordionExample']/table/tbody/tr[2]/td/table/tbody/tr[3]/td/h3</td>
+	<td>Bank Accounts</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='accordionExample']/table/tbody/tr[2]/td/table/tbody/tr[5]/td[2]</td>
+	<td>BCToBeSearched</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='accordionExample']/table/tbody/tr[2]/td/table/tbody/tr[6]/td[2]</td>
+	<td>PCToBeSearched</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='accordionExample']/table/tbody/tr[2]/td/table/tbody/tr[7]/td/h3</td>
+	<td>Accounts</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='accordionExample']/table/tbody/tr[2]/td/table/tbody/tr[9]/td</td>
+	<td>AccountToBeSearched</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=AuthCap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Auth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Debit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Debit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.tile-title.find_user</td>
+	<td>ProfileToBeSearched</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td</td>
+	<td>Andy Roberts <br /> 8889 Howrah Bridge&nbsp;&nbsp;&nbsp;<br /> COCKEYSVILLE ,&nbsp;&nbsp;MD&nbsp;&nbsp;&nbsp;&nbsp;21030 <br /> United States</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Modify Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Delete Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Return to Main Menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h4</td>
+	<td>Credit Cards</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=VisaToBeSearched</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=AuthCap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Auth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=createCreditCardButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='accordionExample']/table/tbody/tr[6]/td/h4</td>
+	<td>On-line Checks</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=BCToBeSearched</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=PCToBeSearched</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=createACHButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Debit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Debit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'View')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Delete')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'View')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Delete')])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='accordionExample']/table/tbody/tr[12]/td/h4</td>
+	<td>Accounts</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=AccountToBeSearched</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'View')])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Delete')])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='accordionExample']/table/tbody/tr[17]/td/h4</td>
+	<td>Payment Plans</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=form[name=&quot;PaymentPlanForm&quot;] &gt; button[name=&quot;createButton&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://10.5.30.31/csrlookup/QA/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>readCSV</td>
+	<td>file://Z:\CSRACLookup\QAversion3\NegativeClientAuthenticationData.csv</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>4</td>
+	<td>loop</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>p</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>CANrn</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CANrn}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${p}&lt;${loop}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Begin Test Row Number ${p}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>CustID</td>
+	<td>${p},1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CustID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>AppID</td>
+	<td>${p},2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${AppID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>CAN</td>
+	<td>${p},3</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CAN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Vendor</td>
+	<td>${p},4</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Vendor}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Key</td>
+	<td>${p},5</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Key}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>CallerID</td>
+	<td>${p},6</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CallerID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>UserName</td>
+	<td>${p},7</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${UserName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Password</td>
+	<td>${p},8</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Password}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Fname</td>
+	<td>${p},9</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Fname}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>MI</td>
+	<td>${p},10</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${MI}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Lname</td>
+	<td>${p},11</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Lname}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>CompName</td>
+	<td>${p},12</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CompName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>AL1</td>
+	<td>${p},13</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${AL1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>AL2</td>
+	<td>${p},14</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${AL2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>ZIP</td>
+	<td>${p},15</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${ZIP}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Email</td>
+	<td>${p},16</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Email}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Phone</td>
+	<td>${p},17</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Phone}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Notes</td>
+	<td>${p},18</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Notes}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf1Name</td>
+	<td>${p},19</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf1Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf1Value</td>
+	<td>${p},20</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf1Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf2Name</td>
+	<td>${p},21</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf2Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf2Value</td>
+	<td>${p},22</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf2Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf3Name</td>
+	<td>${p},23</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf3Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf3Value</td>
+	<td>${p},24</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf3Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf4Name</td>
+	<td>${p},25</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf4Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf4Value</td>
+	<td>${p},26</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf4Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf5Name</td>
+	<td>${p},27</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf5Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf5Value</td>
+	<td>${p},28</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf5Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf6Name</td>
+	<td>${p},29</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf6Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf6Value</td>
+	<td>${p},30</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf6Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf7Name</td>
+	<td>${p},31</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf7Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf7Value</td>
+	<td>${p},32</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf7Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf8Name</td>
+	<td>${p},33</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf8Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf8Value</td>
+	<td>${p},34</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf8Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf9Name</td>
+	<td>${p},35</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf9Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf9Value</td>
+	<td>${p},36</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf9Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf10Name</td>
+	<td>${p},37</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf10Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Udf10Value</td>
+	<td>${p},38</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Udf10Value}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>SegmentType</td>
+	<td>${p},39</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${SegmentType}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Segment1Name</td>
+	<td>${p},40</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Segment1Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Segment1Amount</td>
+	<td>${p},41</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Segment1Amount}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Segment2Name</td>
+	<td>${p},42</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Segment2Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Segment2Amount</td>
+	<td>${p},43</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Segment2Amount}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Segment3Name</td>
+	<td>${p},44</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Segment3Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>Segment3Amount</td>
+	<td>${p},45</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Segment3Amount}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>expError</td>
+	<td>${p},46</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${expError}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>SSO_Test_Page_bootstrap.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=header.customerID</td>
+	<td>${CustID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=header.applicationID</td>
+	<td>${AppID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=header.clientAccountNumber</td>
+	<td>${CANrn}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=header.vendor</td>
+	<td>${Vendor}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=header.identifierKey</td>
+	<td>${Key}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=header.callerID</td>
+	<td>${CallerID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=header.userName</td>
+	<td>${UserName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=header.password</td>
+	<td>${Password}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.firstName</td>
+	<td>${Fname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.middleInitial</td>
+	<td>${MI}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.lastName</td>
+	<td>${Lname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.companyName</td>
+	<td>${CompName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.addressLine1</td>
+	<td>${AL1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.addressLine2</td>
+	<td>${AL2}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.zip</td>
+	<td>${ZIP}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.emailAddress</td>
+	<td>${Email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.phoneNumber</td>
+	<td>${Phone}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.notes</td>
+	<td>${Notes}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[0].id</td>
+	<td>${Udf1Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[0].value</td>
+	<td>${Udf1Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[1].id</td>
+	<td>${Udf2Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[1].value</td>
+	<td>${Udf2Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[2].id</td>
+	<td>${Udf3Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[2].value</td>
+	<td>${Udf3Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[3].id</td>
+	<td>${Udf4Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[3].value</td>
+	<td>${Udf4Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[4].id</td>
+	<td>${Udf5Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[4].value</td>
+	<td>${Udf5Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[5].id</td>
+	<td>${Udf6Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[5].value</td>
+	<td>${Udf6Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[6].id</td>
+	<td>${Udf7Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[6].value</td>
+	<td>${Udf7Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[7].id</td>
+	<td>${Udf8Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[7].value</td>
+	<td>${Udf8Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[8].id</td>
+	<td>${Udf9Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[8].value</td>
+	<td>${Udf9Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[9].id</td>
+	<td>${Udf10Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[9].value</td>
+	<td>${Udf10Value}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentType</td>
+	<td>${SegmentType}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentSegment[0].segmentName</td>
+	<td>${Segment1Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentSegment[0].segmentAmount</td>
+	<td>${Segment1Amount}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentSegment[1].segmentName</td>
+	<td>${Segment2Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentSegment[1].segmentAmount</td>
+	<td>${Segment2Amount}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentSegment[2].segmentName</td>
+	<td>${Segment3Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentSegment[2].segmentAmount</td>
+	<td>${Segment3Amount}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit SSO Request']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.alert.alert-danger</td>
+	<td>${expError}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>End Test Row Number ${p}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${p}+1</td>
+	<td>p</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

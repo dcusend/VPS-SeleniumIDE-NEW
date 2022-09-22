@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa.velocitypayment.com/vbills/" />
+<title>Saving A Payment Method</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Saving A Payment Method</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://qa.velocitypayment.com/vbills/testvbillsenrolled/login.go</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td> BeginExecution RecordNumber: ${rn} </td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>testvbillsenrolled/login.go</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>66655550138</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>madehakhan909@</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=loginSubmitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Payment Methods</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[name=&quot;Add Payment Method&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=paymentMethodType</td>
+	<td>label=Credit Card</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{Math.floor(Math.random()*11111)}</td>
+	<td>myRandom</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${myRandom}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nickName</td>
+	<td>${myRandom}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=accountHolderName</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.line1</td>
+	<td>hello street</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.line2</td>
+	<td>apt 400</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.zipCode</td>
+	<td>22041</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cardAccountNumber</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.city</td>
+	<td>FALLS CHURCH</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>Virginia</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.zipCode</td>
+	<td>22041</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cardExpireMonth</td>
+	<td>05</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cardExpireYear</td>
+	<td>2019</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=userMessageTag</td>
+	<td>Your changes have been saved</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[@id='paymentMethodAddress[${myRandom}]']/td[2]</td>
+	<td>BillingAddress </td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${BillingAddress}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[@id='paymentMethodAddress[9525]']/td[2]</td>
+	<td>Billing Address: <br /> hello street<br /> apt 400<br /> FALLS CHURCH,&nbsp;&nbsp;Virginia ,&nbsp;&nbsp;22041<br /> United States</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=EN Bill</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=selectedPaymentMethod</td>
+	<td>regexp:.*${myRandom}.*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Payment Methods</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=accountHolderName</td>
+	<td>huo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.line1</td>
+	<td>hello street</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.line2</td>
+	<td>apt 400</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.zipCode</td>
+	<td>15220</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cardExpireMonth</td>
+	<td>05</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billingAddressForm.city</td>
+	<td>PITTSBURGH</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>Pennsylvania</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[@id='paymentMethodAddress[${myRandom}]']/td[2]</td>
+	<td>Billing Address: <br /> hello street<br /> apt 400<br /> PITTSBURGH,&nbsp;&nbsp;Pennsylvania ,&nbsp;&nbsp;15220<br /> United States</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=userMessageTag</td>
+	<td>Your changes have been saved</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=EN Bill</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Payments List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>id=selectedPaymentMethod</td>
+	<td>regexp:.*${myRandom}.*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log Out</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

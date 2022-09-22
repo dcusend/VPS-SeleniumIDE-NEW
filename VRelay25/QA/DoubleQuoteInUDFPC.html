@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dev-algorithm.govolution.com/vrelaytest/QA/version_1_0/" />
+<title>DoubleQuoteInUDFPC</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DoubleQuoteInUDFPC</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>Begin Test: DoubleQuoteInUDFPC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://qa.velocitypayment.com/agency/config.do?action=editor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=message_version</td>
+	<td>label=2.5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=amount</td>
+	<td>10.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=client_account_number</td>
+	<td>CAN0520101</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=action_type</td>
+	<td>PayNow</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=language</td>
+	<td>en_US</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_firstname</td>
+	<td>Julio</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_lastname</td>
+	<td>Pablo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_address</td>
+	<td>56 World Center Drive</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_address2</td>
+	<td>Suite 600</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_country_id</td>
+	<td>840</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_city</td>
+	<td>Orlando</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_state</td>
+	<td>NH</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_zip</td>
+	<td>03106</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=order_number</td>
+	<td>PPPPOOOO</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined1</td>
+	<td>BIG &quot;R&quot; CAR CENTER</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined2</td>
+	<td>BIG &quot;R&quot; CAR CENTER</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined3</td>
+	<td>BIG &quot;R&quot; CAR CENTER</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined4</td>
+	<td>BIG &quot;R&quot; CAR CENTER</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined5</td>
+	<td>BIG &quot;R&quot; CAR CENTER</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=application_id</td>
+	<td>255</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=message_version</td>
+	<td>2.5</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>remID</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=remittance_id</td>
+	<td>${remID}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>Sabu 1 Payment Application - Error</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[2]</td>
+	<td>regexp:The following error occurred.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[2]</td>
+	<td>Sabu 1 Payment Application - Error The following error occurred: <br /> The following characters are not allowed [&quot;`=;?&lt;&gt;]<br /> Please&nbsp;&nbsp;click here to continue.</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>End Test: DoubleQuoteInUDFPC</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dev-algorithm.govolution.com/vrelaytest/QA/version_1_0/" />
+<title>PayNowReqFieldsCC</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">PayNowReqFieldsCC</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>Begin Test: PayNowReqFieldsCC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>remID</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://qa.velocitypayment.com/agency/config.do?action=editor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=message_version</td>
+	<td>label=2.5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=amount</td>
+	<td>10.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=client_account_number</td>
+	<td>${remID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=action_type</td>
+	<td>PayNow</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=language</td>
+	<td>en_US</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_firstname</td>
+	<td>Jigny</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_lastname</td>
+	<td>Dubey</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_address</td>
+	<td>2311 Kyoto street</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_address2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_country_id</td>
+	<td>840</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_city</td>
+	<td>Arlington</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_state</td>
+	<td>VA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_zip</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=order_number</td>
+	<td>PPPPOOOO</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_companyname</td>
+	<td>My Company</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined1</td>
+	<td>udf1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined2</td>
+	<td>udf2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined3</td>
+	<td>udf3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined4</td>
+	<td>udf4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined5</td>
+	<td>udf5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined6</td>
+	<td>udf6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined7</td>
+	<td>Orange Label</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined8</td>
+	<td>Soccer Label</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined9</td>
+	<td>udf9</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined10</td>
+	<td>udf10</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://dev-algorithm.govolution.com/vrelaytest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=QA/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=version_2_2/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=vrelaytest.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=application_id</td>
+	<td>638</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=message_version</td>
+	<td>2.5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=remittance_id</td>
+	<td>${remID}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col &gt; p</td>
+	<td>regex:2311 Kyoto street.*</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=paymentMethod</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing-zip-input</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=amount</td>
+	<td>10.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined3</td>
+	<td>udf3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=variableField7DropdownGroupItemID</td>
+	<td>--Select One--</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=variableField8DropdownGroupItemID</td>
+	<td>Soccer</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billingName</td>
+	<td>Jigny Dubey</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cardNumber</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=spc</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=cardExpMonth</td>
+	<td>02</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=cardExpYear</td>
+	<td>2025</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billingAddress</td>
+	<td>2311 Kyoto street</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billingAddress2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=emailAddress</td>
+	<td>iahmed@govolution.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkedAcceptCondition</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=ccSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.vrelay-header</td>
+	<td>Please verify the following information:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:10.00.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf1.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf3.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf4.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf6.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:Soccer.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf9.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:Jigny Dubey.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:Visa.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:1111.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:2/2025.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:2311 Kyoto street.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:United States.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:ARLINGTON.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:Virginia.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:22201.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:iahmed@govolution.com.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.payor_opt</td>
+	<td>exact:Is this information correct?</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=confirmNotifyAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>8000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td &gt; h2</td>
+	<td>Successful Payment Receipt</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td &gt; p</td>
+	<td>Please print this receipt for your records</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf1.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf3.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf4.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf6.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:Soccer Label.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:udf9.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[14]/td[2]</td>
+	<td>$10.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:Authorization and Capture.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:Visa.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:JIGNY DUBEY.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:1111.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:2311 Kyoto street.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:United States.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:ARLINGTON.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:VA.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.main_col</td>
+	<td>regex:22201.*</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>End Test: PayNowReqFieldsCC</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

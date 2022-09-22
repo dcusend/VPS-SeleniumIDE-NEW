@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksUserManagement</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksUserManagement</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@1234567!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access User Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=AVS Policy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=CVV Policy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Email Alerts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong</td>
+	<td>regexp:Total Users :.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.tile.shadow</td>
+	<td>regexp:Dale Sten.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=[daley]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=[firstview]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Find User</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Add User</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Roles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=th</td>
+	<td>regexp:Roles.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=th</td>
+	<td>regexp:Total Roles:.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Administrator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=12role</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Find Role</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Add Role</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Products</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.products</td>
+	<td>Product List</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.tile.shadow</td>
+	<td>regexp:The Following is a list product entitlements that you can manage using User Management module.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.tile.shadow</td>
+	<td>regexp:Click the product for which you wish to view details.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.tile.shadow</td>
+	<td>regexp:be able to see all users and roles who have been granted permissions on the product as well as determine which users and roles have a particular permission.*</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//button[@type='button']</td>
+	<td>IVR</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td>Virtual Terminal</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td>Customer Service Representative</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td>CSR</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td>User Management</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td>Integrated Billing</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[7]</td>
+	<td>Integrated Billing Customer</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[8]</td>
+	<td>Scheduled Payments</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[9]</td>
+	<td>Online Reporting</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AVS Policy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>regexp:AVS Policy Management.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.f-16</td>
+	<td>regexp:The following is a list of products whose AVS polices can be managed using V-Administrator. Click the product name to view the AVS policy in force for credit card transactions. You will then be able to modify the AVS policy if needed.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//button[@type='button']</td>
+	<td>IVR</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td>PRESTO</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td>Basic Bill Presentment</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td>Web Services Gateway</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td>Integrated Web Payments</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td>CSR</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[7]</td>
+	<td>Scheduled Payments</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[8]</td>
+	<td>Advanced Bill Presentment</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[9]</td>
+	<td>Virtual Terminal</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[10]</td>
+	<td>Basic Web Payments</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[11]</td>
+	<td>Multiple Bill Payment</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[11]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[12]</td>
+	<td>SERVICES</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[12]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[13]</td>
+	<td>Gateway</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[13]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[14]</td>
+	<td>Integrated Billing</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[14]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=CVV Policy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>CVV Policy Management</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.f-16</td>
+	<td>regexp:The following is a list of products whose CVV polices can be managed using V-Administrator. Click the product name to view the CVV policy in force for credit card transactions. You will then be able to modify the CVV policy if needed.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//button[@type='button']</td>
+	<td>IVR</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td>PRESTO</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td>Basic Bill Presentment</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td>Web Services Gateway</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td>Integrated Web Payments</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td>CSR</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[7]</td>
+	<td>Scheduled Payments</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[8]</td>
+	<td>Advanced Bill Presentment</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[9]</td>
+	<td>Virtual Terminal</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[10]</td>
+	<td>Basic Web Payments</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[11]</td>
+	<td>Multiple Bill Payment</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[11]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[12]</td>
+	<td>SERVICES</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[12]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[13]</td>
+	<td>Gateway</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[13]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[14]</td>
+	<td>Integrated Billing</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[14]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Email Alerts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.products</td>
+	<td>Email Alerts</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.f-16</td>
+	<td>regexp:In order to setup an email alert for the members of a given Role, first select the Role from the list below. Then check one or more of the checkboxes associated with the available alerts and click the &quot;Save&quot; button to activate your selection. To edit an active email alert, first select the Role from the list below. Then check or uncheck one or more checkboxes associated with the available alerts, as desired, and click the &quot;Save&quot; button to update your selection.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=vtriggerType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[3]/a/span</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

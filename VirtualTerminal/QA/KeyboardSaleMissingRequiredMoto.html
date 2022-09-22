@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa.velocitypayment.com/admin/" />
+<title>KeyboardSaleMissingRequiredMoto</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">KeyboardSaleMissingRequiredMoto</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>testcombinations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogIn</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>testcombinations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>hello2222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access Test combinations PA1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Authorization &amp; Capture (Sale) - Keyboard Entry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=transactionCategory</td>
+	<td>label=Mail Order/Telephone Order</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[4]</td>
+	<td>Card Name is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[6]</td>
+	<td>Address is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[12]</td>
+	<td>ZIP is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[20]</td>
+	<td>Card Number is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[23]</td>
+	<td>Card Expiration Month is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[24]</td>
+	<td>Card Expiration Year is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[30]</td>
+	<td>Amount is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[37]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[39]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[41]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[43]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[45]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[47]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[49]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[51]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[53]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form1']/span[55]</td>
+	<td>This field is required</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

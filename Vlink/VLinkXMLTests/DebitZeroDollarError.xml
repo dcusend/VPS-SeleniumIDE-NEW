@@ -1,0 +1,23 @@
+<testdata>
+<vars Description="WEBPC" expText="Parameter value(s) invalid: amount" Result="Pass" rn="1" appID="685" userName="username" password="password" checkType="P" acctType="1" amount="0.00" seC="WEB" company="" eiN=""/>
+<vars Description="TELPC" expText="Parameter value(s) invalid: amount" Result="Pass" rn="2" appID="685" userName="username" password="password" checkType="P" acctType="1" amount="0.00" seC="TEL" company="" eiN=""/>
+<vars Description="PPDPC" expText="Parameter value(s) invalid: amount" Result="Pass" rn="3" appID="685" userName="username" password="password" checkType="P" acctType="1" amount="0.00" seC="PPD" company="" eiN=""/>
+<vars Description="WEBPC" expText="Parameter value(s) invalid: amount" Result="Pass" rn="4" appID="685" userName="username" password="password" checkType="P" acctType="1" amount="0" seC="WEB" company="" eiN=""/>
+<vars Description="TELPC" expText="Parameter value(s) invalid: amount" Result="Pass" rn="5" appID="685" userName="username" password="password" checkType="P" acctType="1" amount="0" seC="TEL" company="" eiN=""/>
+<vars Description="PPDPC" expText="Parameter value(s) invalid: amount" Result="Pass" rn="6" appID="685" userName="username" password="password" checkType="P" acctType="1" amount="0" seC="PPD" company="" eiN=""/>
+<vars Description="WEBPC" expText="Parameter value(s) invalid: amount" Result="Pass" rn="7" appID="685" userName="username" password="password" checkType="P" acctType="1" amount="00.00" seC="WEB" company="" eiN=""/>
+<vars Description="TELPC" expText="Parameter value(s) invalid: amount" Result="Pass" rn="8" appID="685" userName="username" password="password" checkType="P" acctType="1" amount="00.00" seC="TEL" company="" eiN=""/>
+<vars Description="PPDPC" expText="Parameter value(s) invalid: amount" Result="Pass" rn="9" appID="685" userName="username" password="password" checkType="P" acctType="1" amount="00.00" seC="PPD" company="" eiN=""/>
+<vars Description="WEBPS" expText="Parameter value(s) invalid: amount" Result="Pass" rn="10" appID="685" userName="username" password="password" checkType="P" acctType="2" amount="0.00" seC="WEB" company="" eiN=""/>
+<vars Description="TELPS" expText="Parameter value(s) invalid: amount" Result="Pass" rn="11" appID="685" userName="username" password="password" checkType="P" acctType="2" amount="0.00" seC="TEL" company="" eiN=""/>
+<vars Description="PPDPS" expText="Parameter value(s) invalid: amount" Result="Pass" rn="12" appID="685" userName="username" password="password" checkType="P" acctType="2" amount="0.00" seC="PPD" company="" eiN=""/>
+<vars Description="WEBPS" expText="Parameter value(s) invalid: amount" Result="Pass" rn="13" appID="685" userName="username" password="password" checkType="P" acctType="2" amount="0" seC="WEB" company="" eiN=""/>
+<vars Description="TELPS" expText="Parameter value(s) invalid: amount" Result="Pass" rn="14" appID="685" userName="username" password="password" checkType="P" acctType="2" amount="0" seC="TEL" company="" eiN=""/>
+<vars Description="PPDPS" expText="Parameter value(s) invalid: amount" Result="Pass" rn="15" appID="685" userName="username" password="password" checkType="P" acctType="2" amount="0" seC="PPD" company="" eiN=""/>
+<vars Description="WEBPS" expText="Parameter value(s) invalid: amount" Result="Pass" rn="16" appID="685" userName="username" password="password" checkType="P" acctType="2" amount="00.00" seC="WEB" company="" eiN=""/>
+<vars Description="TELPS" expText="Parameter value(s) invalid: amount" Result="Pass" rn="17" appID="685" userName="username" password="password" checkType="P" acctType="2" amount="00.00" seC="TEL" company="" eiN=""/>
+<vars Description="PPDPS" expText="Parameter value(s) invalid: amount" Result="Pass" rn="18" appID="685" userName="username" password="password" checkType="P" acctType="2" amount="00.00" seC="PPD" company="" eiN=""/>
+<vars Description="CCDCorp" expText="Parameter value(s) invalid: amount" Result="Pass" rn="19" appID="685" userName="username" password="password" checkType="C" acctType="" amount="0.00" seC="CCD" company="My Company" eiN="123456789"/>
+<vars Description="CCDCorp" expText="Parameter value(s) invalid: amount" Result="Pass" rn="20" appID="685" userName="username" password="password" checkType="C" acctType="" amount="0" seC="CCD" company="My Company" eiN="123456789"/>
+<vars Description="CCDCorp" expText="Parameter value(s) invalid: amount" Result="Pass" rn="21" appID="685" userName="username" password="password" checkType="C" acctType="" amount="00.00" seC="CCD" company="My Company" eiN="123456789"/>
+</testdata>

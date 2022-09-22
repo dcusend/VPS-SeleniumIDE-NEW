@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa.velocitypayment.com/csr/" />
+<title>SaleVerifyTranxDetails</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SaleVerifyTranxDetails</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>testvgateway</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogIn</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>testvgateway</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>user590</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=mainPage:landingpage:selectApp</td>
+	<td>label=AutoCSRVIB</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>can</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${can}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${can}</td>
+	<td>retCan</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${retCan}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:clientAccountNumber</td>
+	<td>${retCan}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainPage:landingpage:ContinueBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='transaction']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='customerInfo']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:firstName</td>
+	<td>Jagat</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:lastName</td>
+	<td>Jannani</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:companyName</td>
+	<td>dsdfdf</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:address1</td>
+	<td>1853 Mandan road</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:address2</td>
+	<td>dsdf</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:zipList</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:cityList</td>
+	<td>Arlington</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:email</td>
+	<td>imtiazster@gmail.com</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:landingpage:udf1</td>
+	<td>udf data</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='paymentInfo']/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:transactionTypeListID</td>
+	<td>label=Sale - Keyboard Entry</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:cardNumber_password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:cardNumber_password</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:cvv_password</td>
+	<td>145</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:cardExpMonth</td>
+	<td>label=03</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:cardExpYear</td>
+	<td>label=2021</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;2021&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:categoryMulti</td>
+	<td>label=Mail Order/Telephone Order</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:billing_firstName</td>
+	<td>andy</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:billing_lastName</td>
+	<td>mohl</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:compName</td>
+	<td>dsdf</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:billing_address1</td>
+	<td>2311 york road</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:billing_address2</td>
+	<td>dsdf</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:billing_zipList</td>
+	<td>21114</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:billing_cityList</td>
+	<td>crofton</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:billing_email</td>
+	<td>iahmed@govolution.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:pmt</td>
+	<td>10.00</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainPage:transactionTab:ccMessageForm:showDialogButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>8000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:receiptResultState1</td>
+	<td>The transaction has been successfully processed.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:receiptResultTotalAmount</td>
+	<td>$10.00</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//table[@id='mainPage:landingpage:receiptDialogPaneGrid']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mainPage:landingpage:receiptResultRemittanceID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=mainPage:landingpage:receiptResultRemittanceID</td>
+	<td>gotRemID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${gotRemID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mainPage:landingpage:receiptResultApprovalCode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainPage:landingpage:return</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='customerInfo']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Transaction Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=mainPage:searchTransaction:selectAppForSearch</td>
+	<td>label=AutoCSRVIB</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mainPage:searchTransaction:remittanceID</td>
+	<td>${gotRemID}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>60000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/div[2]/div[2]/div/div/div/div/div/div[2]/div/form[1]/table/tbody/tr[12]/td[2]/div/table/tbody/tr/td[1]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>8000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=${gotRemID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div/table/tbody/tr[5]/td[2]/p</td>
+	<td>Credit Card</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div/table/tbody/tr[6]/td[2]/p</td>
+	<td>Sale</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div/table/tbody/tr[7]/td[2]/p</td>
+	<td>${gotRemID}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div/table/tbody/tr[8]/td[2]/p</td>
+	<td>$10.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div/table/tbody/tr[11]/td[2]/p</td>
+	<td>Success</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div/table/tbody/tr[13]/td[2]/p</td>
+	<td>CSR</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div/table/tbody/tr[21]/td[2]/p</td>
+	<td>AutoCSRVIB</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[2]/td[2]/p</td>
+	<td>${retCan}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[4]/td[2]/p</td>
+	<td>andy mohl</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[6]/td[2]/p</td>
+	<td>iahmed@govolution.com</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[7]/td[2]/p</td>
+	<td>2311 york road</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[9]/td[2]/p</td>
+	<td>CROFTON</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[10]/td[2]/p</td>
+	<td>MD</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[11]/td[2]/p</td>
+	<td>21114</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[12]/td[2]/p</td>
+	<td>United States</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[13]/td[2]/p</td>
+	<td>Visa</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[14]/td[2]/p</td>
+	<td>41 - 1111</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='transactionInfoTable']/div[2]/table/tbody/tr[15]/td[2]/p</td>
+	<td>3/2021</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

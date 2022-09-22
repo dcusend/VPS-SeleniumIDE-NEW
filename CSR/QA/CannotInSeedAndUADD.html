@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://10.5.30.31/csrlookup/QA/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>CSR_Acct_Lookup_v1_QAiMT.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=header.customerID</td>
+	<td>label=TestVgateway Cust</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=header.applicationID</td>
+	<td>label=AutoCSRVIB</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=header.clientAccountNumber</td>
+	<td>1478523698</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.firstName</td>
+	<td>jamun</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.lastName</td>
+	<td>kula</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.addressLine1</td>
+	<td>2311 yorka roada</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.zip</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.emailAddress</td>
+	<td>iahmed@govolution.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customerInformation.phoneNumber</td>
+	<td>1478523698</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentSegment[0].segmentName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.paymentSegment[0].segmentAmount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[0].id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[0].value</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[1].id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=AdditionalTransactionInformation.customData[1].value</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogIn</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>user590</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleCustomerName</td>
+	<td>TestVgateway Cust</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleApplicationName</td>
+	<td>AutoCSRVIB</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleClientAccountNumber</td>
+	<td>1478523698</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleFirstName</td>
+	<td>jamun</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleLastName</td>
+	<td>kula</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleAddress1</td>
+	<td>2311 yorka roada</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleCity</td>
+	<td>ARLINGTON</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleState</td>
+	<td>VA</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=mainPage:landingpage:titleZip</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainPage:landingpage:ContinueBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainPage:landingpage:ContinueBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='transaction']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='customerInfo']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=mainPage:landingpage:firstName</td>
+	<td>jamun</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=mainPage:landingpage:lastName</td>
+	<td>kula</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=mainPage:landingpage:address1</td>
+	<td>2311 yorka roada</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=mainPage:landingpage:zipList</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=mainPage:landingpage:cityList</td>
+	<td>ARLINGTON</td>
+</tr>
+<tr>
+	<td>verifySelectedLabel</td>
+	<td>id=mainPage:landingpage:stateList</td>
+	<td>Virginia</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=mainPage:landingpage:email</td>
+	<td>iahmed@govolution.com</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=mainPage:landingpage:phone</td>
+	<td>(147)852-3698</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=endCallHeader</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='accountInfo']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

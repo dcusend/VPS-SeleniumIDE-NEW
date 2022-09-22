@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dev-algorithm.govolution.com/vlinktest/QA/version_2_0/" />
+<title>MissingReqFieldsCredit</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MissingReqFieldsCredit</td></tr>
+</thead><tbody>
+<tr>
+	<td>forXml</td>
+	<td>file://C:/Users/iahmed/Documents/SeleniumTests/Vlink/VLinkXMLTests/MissingReqFieldsCreditTestData.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Begin Record Number: ${rn}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Test Description: ${Description}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>CC_credit.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=transaction_type</td>
+	<td>${tTypeVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=message_version</td>
+	<td>${mvVoid}</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>remIDVoid</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=remittance_id</td>
+	<td>${remIDVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=application_id</td>
+	<td>${appIDVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>${userVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>${pwdVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=transaction_id</td>
+	<td>${tranID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=response_format</td>
+	<td>${resFormVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=amount</td>
+	<td>${amountCredit}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=order_number</td>
+	<td>${orderCredit}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tax_amount</td>
+	<td>${taxVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=charge_description</td>
+	<td>${chargeCredit}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_number</td>
+	<td>${cardCredit}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_exmo</td>
+	<td>${monthCreddit}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=card_exyr</td>
+	<td>${yearCredit}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=track_data</td>
+	<td>${trackDataVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=track_1_data</td>
+	<td>${track1DataVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=track_2_data</td>
+	<td>${track2DataVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=category</td>
+	<td>${catCredit}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=client_account_number</td>
+	<td>${CANVoid}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Transaction failed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>${expText}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Expected Text: ${expText}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>End Record Number: ${rn}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

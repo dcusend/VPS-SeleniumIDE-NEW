@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksUserReportsDetails</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksUserReportsDetails</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@1234567!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access View All Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=User_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=User Summary Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.tile-title.find_user</td>
+	<td>User Summary Report</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3 &gt; span.ml-1</td>
+	<td>Please choose the start and end date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Start Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div[2]/div[2]/div[2]/label</td>
+	<td>End Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=ou</td>
+	<td>regexp:The Date Range are displayed in PDT.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=continuebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=User_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=User Transaction Detail Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.tile-title.find_user</td>
+	<td>User Transaction Detail Report</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3 &gt; span.ml-1</td>
+	<td>Please choose the start and end date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Start Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div[4]/div[2]/div[2]/label</td>
+	<td>End Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=ou</td>
+	<td>regexp:The Date Range are displayed in PDT.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=continuebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=User_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=User Transaction Summary By Application Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.tile-title.find_user</td>
+	<td>User Transaction Summary By Application Report</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3 &gt; span.ml-1</td>
+	<td>Please choose customers.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.title</td>
+	<td>Customer List</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h6</td>
+	<td>regexp:Available.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=availableParentCustomerIds</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btnAllRight</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btnRight</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btnLeft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btnAllLeft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.subject-info-box-2 &gt; h6</td>
+	<td>exact:Selected :</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div[2]/div[2]/div/h3/span</td>
+	<td>Please choose the start and end date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Start Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div[2]/div[2]/div[2]/div[2]/label</td>
+	<td>End Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=ou</td>
+	<td>regexp:Please choose customers.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=continuebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=User_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=User Transaction Summary By Tender Type Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.tile-title.find_user</td>
+	<td>User Transaction Summary By Tender Type Report</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3 &gt; span.ml-1</td>
+	<td>Please choose customers.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.title</td>
+	<td>Customer List</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h6</td>
+	<td>regexp:Available.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=availableParentCustomerIds</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btnAllRight</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btnRight</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btnLeft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btnAllLeft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.subject-info-box-2 &gt; h6</td>
+	<td>exact:Selected :</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div[2]/div[2]/div/h3/span</td>
+	<td>Please choose the start and end date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Start Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div[2]/div[2]/div[2]/div[2]/label</td>
+	<td>End Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=ou</td>
+	<td>regexp:The Date Range are displayed in PDT.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=continuebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

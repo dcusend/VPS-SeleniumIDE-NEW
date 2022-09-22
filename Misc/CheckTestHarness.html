@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dev-algorithm.govolution.com/vlinktest/Upgrade/version_2_0/" />
+<title>CheckTestHarness</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CheckTestHarness</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>Begin Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>504</td>
+	<td>loop</td>
+</tr>
+<tr>
+	<td>readCSV</td>
+	<td>file://Z:/Misc/VrelayAppss.csv</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${a}&lt;${loop}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://dev-algorithm.govolution.com/vrelaytest/Production/version_2_2/vrelaytest.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>AppID</td>
+	<td>${a},1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${AppID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>MessageVersion</td>
+	<td>${a},2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${MessageVersion}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=application_id</td>
+	<td>${AppID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=message_version</td>
+	<td>${MessageVersion}</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>remID</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=remittance_id</td>
+	<td>${remID}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=html</td>
+	<td>regexp:Transaction cannot be processed.*</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${a}+1</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

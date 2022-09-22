@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa.velocitypayment.com/" />
+<title>MissingReqFieldsCorporateACH</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MissingReqFieldsCorporateACH</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/vbillslookup/lookup/testvbillsauto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=field1</td>
+	<td>111150</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=field2</td>
+	<td>111151</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=paysubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='paymentMethod'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.required</td>
+	<td>Required fields are highlighted with an asterisk.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.vrelay-header</td>
+	<td>Please enter the following billing information about your payment:</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=amount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined2</td>
+	<td>UDF2 Data3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=variableField4DropdownGroupItemID</td>
+	<td>label=Purple</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=variableField5DropdownGroupItemID</td>
+	<td>label=--Select One--</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined6</td>
+	<td>UDF6 Data3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined8</td>
+	<td>UDF8 Data3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billingCompanyname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=routingNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=accountNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmAccountNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=ein</td>
+	<td>123456789</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billingAddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billingAddress2</td>
+	<td>suite 600</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing-zip-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=emailAddress</td>
+	<td>iahmed@govolution.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=achSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.vrelay-error</td>
+	<td>Amount is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[8]/td[3]/span</td>
+	<td>UDF3 is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[10]/td[3]/span</td>
+	<td>UDF5 is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[12]/td[3]/span</td>
+	<td>UDF7 is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[15]/td[3]/span</td>
+	<td>Company Name is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[17]/td[3]/span</td>
+	<td>Account number is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[18]/td[3]/span</td>
+	<td>The Confirm Account Number field is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[21]/td[3]/span</td>
+	<td>Address Line 1 is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=billing-zip-input-err-from-formbean</td>
+	<td>ZIP Code is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[25]/td[3]/span</td>
+	<td>City is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[26]/td[3]/span</td>
+	<td>State is required</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[30]/td[2]/span</td>
+	<td>You must review and accept the ACH terms and conditions in order to process an electronic debit transaction.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

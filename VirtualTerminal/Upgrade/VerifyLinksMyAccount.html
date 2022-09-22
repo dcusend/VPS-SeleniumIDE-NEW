@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://upgrade.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksMyAccount</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksMyAccount</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://upgrade.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@12345678</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>My Account</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#contentwrapper &gt; p</td>
+	<td>Select the &quot;Manage Account Profile&quot; link below in order to review and update your email address, as well as select and answer your security questions. Your email address and security questions must be updated in the system for the self-service forgotten password feature to work properly. The forgotten password feature will allow you to reset your password without needing to contact your system administrator, in the event that you forget your password.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Manage Account Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='contentwrapper']/p[3]</td>
+	<td>Select the &quot;Change Password&quot; link below in order to change your password or review the system password policy.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Change Password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Manage Account Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Manage Account Profile</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p &gt; span</td>
+	<td>Click the &quot;Modify&quot; button below in order to review and update your email address, as well as select and answer your security questions. Once you have completed your updates, click the &quot;Submit&quot; button to save your information.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>User Information</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.input-label</td>
+	<td>exact:Name:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='contentwrapper']/form/span[2]</td>
+	<td>Imtiaz Ahmed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='contentwrapper']/form/span[3]</td>
+	<td>User Name:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='contentwrapper']/form/span[4]</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#contentwrapper &gt; form</td>
+	<td>regexp:Email Address:.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#contentwrapper &gt; form</td>
+	<td>regexp:iahmed@govolution.com.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#contentwrapper &gt; form</td>
+	<td>regexp:Cell Phone Number:.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#contentwrapper &gt; form</td>
+	<td>regexp:240-893-9844.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#contentwrapper &gt; form</td>
+	<td>regexp:Security Questions.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=form &gt; ul &gt; li</td>
+	<td>regexp:What was your childhood nickname?.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='contentwrapper']/form/ul/li[2]</td>
+	<td>regexp:What is the name of your favorite childhood friend?.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='contentwrapper']/form/ul/li[3]</td>
+	<td>regexp:What school did you attend for sixth grade?.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Change Password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Change Password</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=form &gt; p</td>
+	<td>regexp:To change your password, enter your current password. Next, enter a new password and confirm the new password. Please read the password policy for more information on the requirements for account passwords.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=password policy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.input-label</td>
+	<td>Current Password:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=currentPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='contentwrapper']/form/p/span[3]</td>
+	<td>New Password:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=newPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='contentwrapper']/form/p/span[5]</td>
+	<td>Confirm New Password:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=confirmPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[type=&quot;reset&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

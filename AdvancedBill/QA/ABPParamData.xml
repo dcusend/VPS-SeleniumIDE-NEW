@@ -1,0 +1,5 @@
+<testdata>
+<vars CustName="mbills/login.go" Description="LoginWithValidCredentials" expText="Available Bill Label" Result="Pass" rn="1" Login_UserName="sweet01" Login_Password="kelly909"/>
+<vars CustName="mbills/login.go" Description="LoginMissingUserNameVerifyError" expText="The information you have entered does not match our records. Please try again." Result="Pass" rn="2" Login_UserName="" Login_Password="111111"/>
+</testdata>
+

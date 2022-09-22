@@ -1,0 +1,12 @@
+<testdata>
+<vars Description="Corporate" rn="1" appID="562" userName="user562" password="pwd562" checkType="C" acNumber="647094308" compName= "My Company" acctType="" rtnNumber="256072691" amount="10.00"  seC="CCD" />
+<vars Description="Corporate" rn="2" appID="562" userName="user562" password="pwd562" checkType="C" acNumber="908829627" compName= "My Company" acctType="" rtnNumber="256072691" amount="12.00"  seC="CCD" />
+<vars Description="Corporate" rn="3" appID="562" userName="user562" password="pwd562" checkType="C" acNumber="875927684" compName= "My Company" acctType="" rtnNumber="256072691" amount="14.00"  seC="CCD" />
+<vars Description="Corporate" rn="4" appID="562" userName="user562" password="pwd562" checkType="C" acNumber="225710755" compName= "My Company" acctType="" rtnNumber="256072691" amount="16.00"  seC="CCD" />
+<vars Description="Corporate" rn="5" appID="562" userName="user562" password="pwd562" checkType="C" acNumber="972054725" compName= "My Company" acctType="" rtnNumber="256072691" amount="18.00"  seC="CCD" />
+<vars Description="Corporate" rn="6" appID="562" userName="user562" password="pwd562" checkType="C" acNumber="722655386" compName= "My Company" acctType="" rtnNumber="256072691" amount="20.00"  seC="CCD" />
+<vars Description="Corporate" rn="7" appID="562" userName="user562" password="pwd562" checkType="C" acNumber="727363340" compName= "My Company" acctType="" rtnNumber="256072691" amount="22.00"  seC="CCD" />
+<vars Description="Corporate" rn="8" appID="562" userName="user562" password="pwd562" checkType="C" acNumber="426419003" compName= "My Company" acctType="" rtnNumber="256072691" amount="24.00"  seC="CCD" />
+<vars Description="Corporate" rn="9" appID="562" userName="user562" password="pwd562" checkType="C" acNumber="403725253" compName= "My Company" acctType="" rtnNumber="256072691" amount="24.00"  seC="CCD" />
+</testdata>
+

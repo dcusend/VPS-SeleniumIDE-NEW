@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="SaleVoidXML.html">SaleVoidXML</a></td></tr>
+<tr><td><a href="SaleCreditXML.html">SaleCreditXML</a></td></tr>
+<tr><td><a href="SaleCreditVoidXML.html">SaleCreditVoidXML</a></td></tr>
+<tr><td><a href="AuthCaptureXML.html">AuthCaptureXML</a></td></tr>
+<tr><td><a href="AuthCaptureVoidXML.html">AuthCaptureVoidXML</a></td></tr>
+<tr><td><a href="DebitCreditXML.html">DebitCreditXML</a></td></tr>
+<tr><td><a href="EncryptedXML.html">EncryptedXML</a></td></tr>
+<tr><td><a href="UnencryptedXML.html">UnencryptedXML</a></td></tr>
+<tr><td><a href="SaleVoidNoTranIDXML.html">SaleVoidNoTranIDXML</a></td></tr>
+<tr><td><a href="DebitVoidNoTranIDXML.html">DebitVoidNoTranIDXML</a></td></tr>
+<tr><td><a href="DebitVoidXML.html">DebitVoidXML</a></td></tr>
+</tbody></table>
+</body>
+</html>

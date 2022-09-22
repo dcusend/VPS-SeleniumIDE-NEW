@@ -1,0 +1,4 @@
+CustomerID,ApplicationID,CAN,Vendor,Key,CalledID,UserName,Password,Fname,MI,Lname,CompName,AL1,AL2,ZIP,Email,Phone,Notes,UDF1Name,UDF1Value,UDF2Name,UDF2Value,UDF3Name,UDF3Value,UDF4Name,UDF4Value,UDF5Name,UDF5Value,UDF6Name,UDF6Value,UDF7Name,UDF7Value,UDF8Name,UDF8Value,UDF9Name,UDF9Value,UDF10Name,UDF10Value,SegmentType,Segment1Name,Segment1Amt,Segment2Name,Segment2Amt,Segment3Name,Segment3Amt
+6,61,,,,,svelamuru,12345678,Imtiaz,,Ahmed,Moi Company,2311 york road,Suite 600,22201,iahmed@govolution.com,2408963257,These are notes,udf1Name,udf1Value,udf2Name,udf2Value,udf3Name,udf3Value,udf4Name,udf4Value,udf5Name,udf5Value,udf6Name,udf6Value,udf7Name,udf7Value,udf8Name,udf8Value,udf9Name,udf9Value,udf10Name,udf10Value,Utility,Balance,10,,,,
+6,61,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+6,61,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dev-algorithm.govolution.com/vlinktest/QA/version_2_0/" />
+<title>DebitVoidXML</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DebitVoidXML</td></tr>
+</thead><tbody>
+<tr>
+	<td>forXml</td>
+	<td>file://C:/Users/iahmed/Documents/SeleniumTests/Vlink/VLinkXMLTests/DebitVoidTestData.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>debit.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Begin Record Number: ${rn}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=transaction_type</td>
+	<td>${tranType}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=message_version</td>
+	<td>${msgVer}</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>remID</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=remittance_id</td>
+	<td>${remID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=application_id</td>
+	<td>${appID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>${userName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=response_format</td>
+	<td>${responseFormat}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_type</td>
+	<td>${checkType}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=original_transaction_id</td>
+	<td>${tranID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_first_name</td>
+	<td>${firstName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_last_name</td>
+	<td>${lastName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_address</td>
+	<td>${al1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_address2</td>
+	<td>${al2}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_city</td>
+	<td>${city}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_state</td>
+	<td>${state}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_zip</td>
+	<td>${zip}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=country_id</td>
+	<td>${country}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_account</td>
+	<td>${account}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_company</td>
+	<td>${company}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=account_type</td>
+	<td>${acctType}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=routing_number</td>
+	<td>${rtnNumber}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=amount</td>
+	<td>${amount}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_ssn</td>
+	<td>${ssN}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_dl_number</td>
+	<td>${licNum}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_dl_state</td>
+	<td>${licState}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_dob</td>
+	<td>${doB}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_ein</td>
+	<td>${eiN}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=standard_entry_class</td>
+	<td>${seC}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=client_account_number</td>
+	<td>${CAN}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tax_amount</td>
+	<td>${tax}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=charge_description</td>
+	<td>${charge}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=bill_payment_indicator</td>
+	<td>${BillPayInd}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=addenda_info</td>
+	<td>${addenda}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined1</td>
+	<td>${udf1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined2</td>
+	<td>${udf2}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined3</td>
+	<td>${udf3}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined4</td>
+	<td>${udf4}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined5</td>
+	<td>${udf5}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined6</td>
+	<td>${udf6}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined7</td>
+	<td>${udf7}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined8</td>
+	<td>${udf8}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined9</td>
+	<td>${udf9}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user_defined10</td>
+	<td>${udf10}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>${expText}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=pre</td>
+	<td>resText</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${resText}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['resText'].substring(19,27).trim()</td>
+	<td>tranID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${tranID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>ACH_void.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=transaction_type</td>
+	<td>${tTypeVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=message_version</td>
+	<td>${mvVoid}</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Date.now</td>
+	<td>remIDVoid</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=remittance_id</td>
+	<td>${remIDVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=application_id</td>
+	<td>${appIDVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>${userVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>${pwdVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=response_format</td>
+	<td>${resFormVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=check_type</td>
+	<td>${checkTypeVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=standard_entry_class</td>
+	<td>${seCVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=original_transaction_id</td>
+	<td>${tranID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=original_transaction_type</td>
+	<td>${origtTypeVoid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=client_account_number</td>
+	<td>${CANVoid}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>${expText}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=pre</td>
+	<td>resTextVoid</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${resTextVoid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['resTextVoid'].substring(19,27).trim()</td>
+	<td>tranIDVoid</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${tranIDVoid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>End Record Number: ${rn}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa.velocitypayment.com/admin/" />
+<title>Create Profile Add Credit Card</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create Profile Add Credit Card</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>testvbillsenrolled</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Logout</td>
+	<td>logoutPresent</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoutPresent}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==true</td>
+	<td>doLogout</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${logoutPresent}==false</td>
+	<td>doLogin</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>testvbillsenrolled</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>hello2222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access Test VBillsEnrolled PA</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random().toString(36).substring(7)}</td>
+	<td>genProfileName</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=profileName</td>
+	<td>${genProfileName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address1</td>
+	<td>998 Main street</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=postalCode</td>
+	<td>15220</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createCreditCardButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>James</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastName</td>
+	<td>Hunga</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nickName</td>
+	<td>My Visa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cardNumber</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=expirationMonth</td>
+	<td>label=2 - FEB</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=expirationYear</td>
+	<td>label=2025</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address1</td>
+	<td>25 Main Road</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=postalCode</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submitCreateCreditCardButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=My Visa</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:James Hunga.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:xxx1111.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:02/2025.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=AuthCap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Auth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:James Hunga.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:xxx1111.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:02/2025.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:Visa.*</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Modify Credit Card</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Delete Credit Card</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Return to Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Credit Card</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>regexp:Delete Credit Card Confirmation.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>name=PaymentMethodForm</td>
+	<td>regexp:This will delete the credit card account. Are you sure you want to do this?.*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=deleteButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:Payment Method Deletion.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent</td>
+	<td>regexp:Payment method was successfully deleted.*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=deleteButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

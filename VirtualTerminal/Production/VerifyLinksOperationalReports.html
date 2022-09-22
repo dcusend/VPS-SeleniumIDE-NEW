@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksOperationalReports</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksOperationalReports</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@1234567!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access View All Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Online Reports - Main Menu [Test Customer]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=Operational_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=Audit_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=User_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=allr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Email Subscription</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=FirstView</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Active Payment Plan Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=code</td>
+	<td>View details for all &quot;Pending&quot; and &quot;In Process&quot; payment plans, for a selected payment application.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Auto Pay Enrollments Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports1 &gt; code</td>
+	<td>View all active Bill File-based (Bill Pay) and Non-Bill File-based (Auto Pay) Auto Pay plan enrollments for a selected payment application.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Bill Statistics Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports2 &gt; code</td>
+	<td>View customer profile creation and bill opt out statistics for your Enrolled v+Bills customers.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Customer Profiles Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports19 &gt; code</td>
+	<td>View details for all customer profiles for a selected Velocity customer.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Download Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports3 &gt; code</td>
+	<td>Download information related to transactions for a given time period.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Enterprise Transaction Summary Report by Payment Channel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports20 &gt; code</td>
+	<td>View enterprise-wide processing totals for a given day, week or month, itemized by payment channel.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Enterprise Transaction Summary By Tender Type Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports4 &gt; code</td>
+	<td>View enterprise-wide processing totals for a given day, week or month, itemized by payment tender.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Enterprise Transaction Summary Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports5 &gt; code</td>
+	<td>View enterprise-wide processing totals for a given day, week or month, itemized by payment tender.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Exceptions Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports6 &gt; code</td>
+	<td>View information related to transactions that were not successfully processed for a given time period.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=File Upload Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports7 &gt; code</td>
+	<td>View bill file upload activity and status for a given time period.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Online Check Returns Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports8 &gt; code</td>
+	<td>View returned online check payments.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Parcels Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports17 &gt; code</td>
+	<td>View parcels information related to transactions that were processed for a given time period.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Payment Account Activity Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports9 &gt; code</td>
+	<td>View and examine the activity for a given payment account (e.g. bill number or account number) to determine if payment has been received or to compare against your accounts receivables system.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Payment Tender Activity Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports10 &gt; code</td>
+	<td>View and examine the activity for a given payment tender (e.g. credit card number or checking/savings account) to determine what payments have been issued using the given tender.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Posting File Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports11 &gt; code</td>
+	<td>Posting information related to transactions for a given time period.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=QuickBooks Integration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports12 &gt; code</td>
+	<td>Import Velocity transactions into your QuickBooks software.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Scheduled Payments Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports13 &gt; code</td>
+	<td>View your anticipated cash flow information, by process date, for one-time, future-dated transactions and recurring payment plans.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Settlement Batch Activity Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports14 &gt; code</td>
+	<td>View settlement batch activity for a given time period.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Transaction Activity Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports15 &gt; code</td>
+	<td>View daily activity report for a given time period.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Transaction Summary Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#Operational_Reports16 &gt; code</td>
+	<td>View processing totals for a given day, week or month, itemized by payment tender.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
