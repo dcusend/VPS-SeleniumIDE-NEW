@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VT-Debit-Void</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VT-Debit-Void</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://upgrade.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@12345678</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access BWP License Fees GovTest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=personal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>name=process</td>
+	<td>RemiID</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['RemiID'].substring(76,100).trim()</td>
+	<td>RemittanceID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>RemittanceID: ${RemittanceID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientAcctNumber</td>
+	<td>33333101</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zip</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>Jason</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastName</td>
+	<td>Holder</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address</td>
+	<td>45 Marina Drive</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>Arlington</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=routingNumber</td>
+	<td>256072691</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=accountNumber</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmAccountNumber</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=amount</td>
+	<td>2.50</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined1</td>
+	<td>udf1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined2</td>
+	<td>udf2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined3</td>
+	<td>udf3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined4</td>
+	<td>udf4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined5</td>
+	<td>udf5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userDefined6</td>
+	<td>udf6</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state_us</td>
+	<td>label=Virginia</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Transaction Successful</td>
+	<td>Transaction Successful</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='option1']/div/div/div/div[2]/div/table/tbody/tr[7]/td[2]</td>
+	<td>Debit</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Issue Transactions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='button'])[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=searchValue</td>
+	<td>${RemittanceID}</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>name=achTransactionTypes</td>
+	<td>label=Debit</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=sbuttonbottom</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.table-responsive.px-3 &gt; div &gt; div.tile-body</td>
+	<td>PayID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${PayID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['PayID'].substring(89,99).trim()</td>
+	<td>PaymentID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${PaymentID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@onclick=&quot;javascript:searchDetail('${PaymentID}')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Void this transaction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Transaction Successful</td>
+	<td>Transaction Successful</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='option1']/div/div/div/div[2]/div/table/tbody/tr[7]/td[2]</td>
+	<td>Void</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

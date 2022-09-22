@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>VerifyLinksRiskAuditReportsDetails</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">VerifyLinksRiskAuditReportsDetails</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://upgrade.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@12345678</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access View All Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Audit_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Role History Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.tile-title.find_user</td>
+	<td>Role History Report</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.f-16.ml-3</td>
+	<td>The report will only contain information on actions that have taken place on or after October 26, 2011</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3 &gt; span.ml-1</td>
+	<td>Please choose the start and end date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Start Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div/div[2]/div[2]/label</td>
+	<td>End Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div[2]/div/h3/span</td>
+	<td>Please select one role on which to base this report</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-md-3 &gt; label.justify-content-start</td>
+	<td>exact:Role:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=roleName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=reportButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Audit_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=User Actions Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.tile-title.find_user</td>
+	<td>User Actions Report</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.f-16.ml-3</td>
+	<td>The report will only contain information on actions that have taken place on or after October 26, 2011</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3 &gt; span.ml-1</td>
+	<td>Please choose the start and end date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Start Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div[2]/div[2]/div[2]/label</td>
+	<td>End Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=continuebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Audit_Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=User History Report</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.tile-title.find_user</td>
+	<td>User History Report</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.f-16.ml-3</td>
+	<td>The report will only contain information on actions that have taken place on or after October 26, 2011</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3 &gt; span.ml-1</td>
+	<td>Please choose the start and end date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Start Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='ou']/div/div[2]/div[2]/label</td>
+	<td>End Date and Time:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=startD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=endD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-md-12 &gt; h3 &gt; span.ml-1</td>
+	<td>Please select one user on which to base this report.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-md-3 &gt; label.justify-content-start</td>
+	<td>exact:User:</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=userIDs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=reportButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

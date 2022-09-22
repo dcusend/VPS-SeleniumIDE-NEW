@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>ABP-UI-Verification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ABP-UI-Verification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://upgrade.velocitypayment.com/vbills/testcustomer/login.go</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>asingh</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Gov123456!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=loginSubmitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Available Some Bills</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Step 1: Pay Your Some Bills(s) By Checking One or More Checkboxes in the &quot;Check to Pay&quot; Column Below.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='billListForm']/div[2]/div/h2</td>
+	<td>Step 2: Select or Create a Payment Method</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Payments List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Payments List</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=b</td>
+	<td>Search Payments:</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Payment Methods</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>View Payment Methods</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[name=&quot;Add Payment Method&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Account Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Account Profile</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=User List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Admin - User Accounts</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[name=&quot;Add Payment Method&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td</td>
+	<td>asingh</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=FAQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Log Out</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.velocitypayment.com/admin/testcustomer" />
+<title>CreateAndDeleteProfile</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateAndDeleteProfile</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://upgrade.velocitypayment.com/admin/testcustomer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-password</td>
+	<td>Govo@12345678</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access BWP License Fees GovTest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=profileName</td>
+	<td>CreateDeleteProfile</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address1</td>
+	<td>258 Elmater Ave</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=postalCode</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>Arlington</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>label=VA-Virginia</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>regexp:Profile Creation.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>regexp:Profile successfully created.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.tile-title.find_user</td>
+	<td>regexp:CreateDeleteProfile.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td</td>
+	<td>regexp:258 Elmater Ave.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td</td>
+	<td>regexp:Arlington.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td</td>
+	<td>regexp:VA.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td</td>
+	<td>regexp:22201.*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td</td>
+	<td>regexp:United States.*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createCreditCardButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>Hari</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastName</td>
+	<td>Mirch</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nickName</td>
+	<td>Hari Visa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cardNumber</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=expirationMonth</td>
+	<td>label=5 - MAY</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=expirationYear</td>
+	<td>label=2027</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=postalCode</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submitCreateCreditCardButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Hari Visa</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>Payment Method Created</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>Payment Method Created Payment method creation successful</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createACHButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>Kaali</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastName</td>
+	<td>Mirch</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=paymentMethodType</td>
+	<td>label=Personal Checking</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=routingTransitNumber</td>
+	<td>256072691</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nickName</td>
+	<td>Kaali PC</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=accountNumber</td>
+	<td>22222222</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submitCreateACHButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Kaali PC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=accountName</td>
+	<td>Mirch Account</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=accountNumber</td>
+	<td>66666666</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=createButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Mirch Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.required</td>
+	<td>exact:This will delete all of the following information. Are you sure you want to do this?</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=deleteButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>No Search String</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
