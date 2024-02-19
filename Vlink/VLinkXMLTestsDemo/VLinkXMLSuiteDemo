@@ -27,6 +27,19 @@
 <tr><td><a href="SaleVoidXMLTSYS.html">SaleVoidXMLTSYS</a></td></tr>
 <tr><td><a href="SaleCreditVoidXMLTSYS.html">SaleCreditVoidXMLTSYS</a></td></tr>
 <tr><td><a href="AuthCaptureVoidXMLTSYS.html">AuthCaptureVoidXMLTSYS</a></td></tr>
+<tr><td><a href="SaleAndVoidVantivCPS.html">SaleAndVoidVantivCPS</a></td></tr>
+<tr><td><a href="SaleAndCreditAndVoid-VantivCPS.html">SaleAndCreditAndVoid-VantivCPS</a></td></tr>
+<tr><td><a href="AuthCaptureVoidVantivCPS.html">AuthCaptureVoidVantivCPS</a></td></tr>
+<tr><td><a href="SaleVoidTSYSDualCF.html">SaleVoidTSYSDualCF</a></td></tr>
+<tr><td><a href="SaleCreditVoidTSYSDualCF.html">SaleCreditVoidTSYSDualCF</a></td></tr>
+<tr><td><a href="AuthCaptureVoidTSYSDualCF.html">AuthCaptureVoidTSYSDualCF</a></td></tr>
+<tr><td><a href="SaleVoidVantivDualCF.html">SaleVoidVantivDualCF</a></td></tr>
+<tr><td><a href="SaleCreditVoidVantivDualCF.html">SaleCreditVoidVantivDualCF</a></td></tr>
+<tr><td><a href="AuthCaptureVoidVantivDualCF.html">AuthCaptureVoidVantivDualCF</a></td></tr>
+<tr><td><a href="SaleVoidEncryptedTSYSCPS.html">SaleVoidEncryptedTSYSCPS</a></td></tr>
+<tr><td><a href="SaleVoidEncryptedVantivCPS.html">SaleVoidEncryptedVantivCPS</a></td></tr>
+<tr><td><a href="SaleVoidUnencryptedTSYSCPS.html">SaleVoidUnencryptedTSYSCPS</a></td></tr>
+<tr><td><a href="SaleVoidUnencryptedVantivCPS.html">SaleVoidUnencryptedVantivCPS</a></td></tr>
 </tbody></table>
 </body>
 </html>

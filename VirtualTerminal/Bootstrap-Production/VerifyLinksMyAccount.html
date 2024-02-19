@@ -17,18 +17,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=input-username</td>
+	<td>id=okta-signin-username</td>
 	<td>iahmed</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=input-password</td>
-	<td>Hello@5555555</td>
+	<td>id=okta-signin-password</td>
+	<td>Hello!3333333</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//input[@value='Submit']</td>
+	<td>id=okta-signin-submit</td>
 	<td></td>
 </tr>
 <tr>
@@ -123,47 +128,47 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[4]/td</td>
+	<td>//div[2]/div/div</td>
 	<td>regexp:Email Address.*</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[4]/td[2]</td>
+	<td>//div[2]/div/div</td>
 	<td>regexp:iahmed@govolution.com.*</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[5]/td</td>
+	<td>//div[2]/div/div</td>
 	<td>regexp:Cell Phone Number.*</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//tr[5]/td[2]</td>
+	<td>//div[2]/div/div</td>
 	<td>regexp:240-893-9844.*</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>css=h1.products.mt-4</td>
+	<td>//div[2]/div/div</td>
 	<td>regexp:Security Questions.*</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//table[2]/tbody/tr/td</td>
+	<td>//div[2]/div/div</td>
 	<td>regexp:What was your childhood nickname?.*</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//table[2]/tbody/tr[3]/td</td>
+	<td>//div[2]/div/div</td>
 	<td>regexp:What is the name of your favorite childhood friend?.*</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//table[2]/tbody/tr[5]/td</td>
+	<td>//div[2]/div/div</td>
 	<td>regexp:What school did you attend for sixth grade?.*</td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>css=input[type=&quot;submit&quot;]</td>
+	<td>//button[@value='Modify']</td>
 	<td></td>
 </tr>
 <tr>

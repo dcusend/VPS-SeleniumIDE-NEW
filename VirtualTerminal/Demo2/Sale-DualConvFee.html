@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://demo2.velocitypayment.com/admin/" />
+<title>Sale-DualConvFee</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Sale-DualConvFee</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>imtiazdemo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=okta-signin-username</td>
+	<td>iahmed1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=okta-signin-password</td>
+	<td>hello2222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=okta-signin-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access AutoDualCFtpDemo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Authorization &amp; Capture (Sale) - Keyboard Entry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=card_name</td>
+	<td>melanie</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address</td>
+	<td>123 test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zip</td>
+	<td>20152</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cardNumber</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=cardExpMonth</td>
+	<td>label=03</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=cardExpYear</td>
+	<td>label=2028</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=transactionCategory</td>
+	<td>label=Mail Order/Telephone Order</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=amount</td>
+	<td>10.50</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=smsNumber</td>
+	<td>703-894-5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userDefined1</td>
+	<td>udf1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userDefined2</td>
+	<td>udf2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userDefined3</td>
+	<td>udf3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userDefined4</td>
+	<td>udf4</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=userDefined5</td>
+	<td>label=Orange</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=userDefined6</td>
+	<td>label=Yellow</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userDefined7</td>
+	<td>udf7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userDefined8</td>
+	<td>udf8</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userDefined9</td>
+	<td>udf9</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userDefined10</td>
+	<td>udf10</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#maincontent-2col &gt; h3</td>
+	<td>Transaction Successful</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=maincontent-2col</td>
+	<td>regexp:Dual Transaction.*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://qa2.velocitypayment.com/admin/" />
+<title>Sale-TP-App744</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Sale-TP-App744</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>imtiaz</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=okta-signin-username</td>
+	<td>iahmed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=okta-signin-password</td>
+	<td>hello2222</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=okta-signin-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Access AutoDualCFtpQA</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Keyboard Entry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=card_name</td>
+	<td>Kabir Bedi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address</td>
+	<td>325 Sawarkar marg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zip</td>
+	<td>22201</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cardNumber</td>
+	<td>374245002771003</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=cardExpMonth</td>
+	<td>label=12</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=cardExpYear</td>
+	<td>label=2028</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=transactionCategory</td>
+	<td>label=Mail Order/Telephone Order</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=amount</td>
+	<td>5.50</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=emailAddressText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userDefined1</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cvv</td>
+	<td>201</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=userDefined6</td>
+	<td>label=Orange</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.timeline-post</td>
+	<td>regexp:Transaction Successful.*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

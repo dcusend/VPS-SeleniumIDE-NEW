@@ -17,18 +17,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=input-username</td>
+	<td>id=okta-signin-username</td>
 	<td>iahmed</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=input-password</td>
-	<td>Hello@5555555</td>
+	<td>id=okta-signin-password</td>
+	<td>Hello!2222222</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//input[@value='Submit']</td>
+	<td>id=okta-signin-submit</td>
 	<td></td>
 </tr>
 <tr>
@@ -183,8 +188,8 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//div[@id='option1']/div/div/div/div[2]/div/table/tbody/tr[7]/td[2]</td>
-	<td>Debit</td>
+	<td>css=div.timeline-post</td>
+	<td>regexp:Debit.*</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -253,8 +258,8 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//div[@id='option1']/div/div/div/div[2]/div/table/tbody/tr[7]/td[2]</td>
-	<td>Void</td>
+	<td>css=div.timeline-post</td>
+	<td>regexp:Void.*</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
