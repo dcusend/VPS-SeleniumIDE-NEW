@@ -17,18 +17,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=input-username</td>
+	<td>id=okta-signin-username</td>
 	<td>iahmed</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=input-password</td>
-	<td>Hello!2222222</td>
+	<td>id=okta-signin-password</td>
+	<td>Hello!7777777</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//input[@value='Submit']</td>
+	<td>id=okta-signin-submit</td>
 	<td></td>
 </tr>
 <tr>
@@ -158,13 +163,13 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>css=strong</td>
-	<td>2 DAILY</td>
+	<td>id=paymentSummaryLine1</td>
+	<td>regexp:2 DAILY.*</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//div[@id='paymentSummaryLine1']/strong[2]</td>
-	<td>5.00</td>
+	<td>id=paymentSummaryLine1</td>
+	<td>regexp:5.00.*</td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
